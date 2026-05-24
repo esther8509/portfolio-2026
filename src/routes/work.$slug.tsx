@@ -84,7 +84,7 @@ function ProjectDetailPage() {
 
       {/* Meta strip */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
-        <div className="grid grid-cols-2 gap-6 border-y border-border/60 py-6 md:grid-cols-4">
+        <div className="grid grid-cols-3 gap-6 border-y border-border/60 py-6">
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Client</div>
             <div className="mt-2 text-base font-medium">{project.client}</div>
@@ -92,10 +92,6 @@ function ProjectDetailPage() {
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Discipline</div>
             <div className="mt-2 text-base font-medium">{project.discipline}</div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Year</div>
-            <div className="mt-2 text-base font-medium">{project.year}</div>
           </div>
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Status</div>
