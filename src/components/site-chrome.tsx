@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 
-const navLinks: ReadonlyArray<{ to: "/" | "/work" | "/about"; label: string; end?: boolean }> = [
-  { to: "/", label: "Index", end: true },
+const navLinks: ReadonlyArray<{ to: "/work" | "/about"; label: string }> = [
   { to: "/work", label: "Work" },
   { to: "/about", label: "About" },
 ];
@@ -18,7 +17,6 @@ export function SiteHeader() {
             <Link
               key={l.to}
               to={l.to}
-              activeOptions={{ exact: l.end }}
               activeProps={{ className: "text-foreground" }}
               inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
               className="transition-colors"
