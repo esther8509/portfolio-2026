@@ -27,10 +27,7 @@ function WorkPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-16 md:px-10 md:pb-24 md:pt-24">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Index of Work / 2023 — 2026
-          </div>
-          <div className="md:col-span-9">
+          <div className="md:col-span-9 md:col-start-4">
             <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
               Twenty-eight projects.<br />
               <span className="italic text-muted-foreground">A small, careful catalogue.</span>
@@ -41,26 +38,22 @@ function WorkPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-12 border-y border-border/60 py-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          <div className="col-span-1">№</div>
-          <div className="col-span-5">Project</div>
+          <div className="col-span-6">Project</div>
           <div className="col-span-3">Discipline</div>
-          <div className="col-span-2">Client</div>
-          <div className="col-span-1 text-right">Year</div>
+          <div className="col-span-3">Client</div>
         </div>
-        {projects.map((p, i) => (
+        {projects.map((p) => (
           <Link
             key={p.slug}
             to="/work/$slug"
             params={{ slug: p.slug }}
             className="group grid grid-cols-12 items-center border-b border-border/60 py-5 transition-colors hover:bg-secondary/60"
           >
-            <div className="col-span-1 text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</div>
-            <div className="col-span-5 text-display text-xl font-medium tracking-tight md:text-2xl">
+            <div className="col-span-6 text-display text-xl font-medium tracking-tight md:text-2xl">
               {p.title}
             </div>
             <div className="col-span-3 text-sm">{p.discipline}</div>
-            <div className="col-span-2 text-sm text-muted-foreground">{p.client}</div>
-            <div className="col-span-1 text-right text-sm text-muted-foreground">{p.year}</div>
+            <div className="col-span-3 text-sm text-muted-foreground">{p.client}</div>
           </Link>
         ))}
       </section>
@@ -83,12 +76,9 @@ function WorkPage() {
                   className={`${aspectClass[p.aspect]} w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]`}
                 />
               </div>
-              <div className="mt-4 flex items-baseline justify-between gap-4">
-                <div>
-                  <h3 className="text-display text-lg font-medium tracking-tight">{p.title}</h3>
-                  <p className="text-sm text-muted-foreground">{p.discipline}</p>
-                </div>
-                <span className="text-sm text-muted-foreground">{p.year}</span>
+              <div className="mt-4">
+                <h3 className="text-display text-lg font-medium tracking-tight">{p.title}</h3>
+                <p className="text-sm text-muted-foreground">{p.discipline}</p>
               </div>
             </Link>
           ))}

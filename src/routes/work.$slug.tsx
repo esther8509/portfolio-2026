@@ -60,8 +60,6 @@ function parseCaseStudy(text: string): { intro: string | null; sections: Section
 function ProjectDetailPage() {
   const { project } = Route.useLoaderData();
   const parsed = project.caseStudy ? parseCaseStudy(project.caseStudy) : { intro: null, sections: [] };
-  const projectNumber = String(projects.findIndex((p) => p.slug === project.slug) + 1).padStart(2, "0");
-
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
@@ -69,10 +67,7 @@ function ProjectDetailPage() {
       {/* Title block */}
       <section className="mx-auto max-w-[1400px] px-6 pb-12 pt-16 md:px-10 md:pb-20 md:pt-28">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Project № {projectNumber} / {project.year}
-          </div>
-          <div className="md:col-span-9">
+          <div className="md:col-span-9 md:col-start-4">
             <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
               {project.title}
             </h1>
@@ -87,7 +82,7 @@ function ProjectDetailPage() {
 
       {/* Meta strip */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
-        <div className="grid grid-cols-2 gap-6 border-y border-border/60 py-6 md:grid-cols-4">
+        <div className="grid grid-cols-3 gap-6 border-y border-border/60 py-6">
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Client</div>
             <div className="mt-2 text-base font-medium">{project.client}</div>
@@ -95,10 +90,6 @@ function ProjectDetailPage() {
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Discipline</div>
             <div className="mt-2 text-base font-medium">{project.discipline}</div>
-          </div>
-          <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Year</div>
-            <div className="mt-2 text-base font-medium">{project.year}</div>
           </div>
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Status</div>
