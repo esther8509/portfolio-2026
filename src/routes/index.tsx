@@ -21,15 +21,15 @@ function Index() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-8">
             <h1 className="text-display text-[14vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[8.5vw]">
-              A quiet<br />
-              studio for<br />
-              <span className="italic">considered</span> work.
+              Designer<br />
+              <span className="italic">@Meta</span><br />
+              Reality Labs
             </h1>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
             <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
-              Esther Nam is a designer and art director based in Seoul, working across brand,
-              editorial, and digital products with a focus on restraint, rhythm, and material.
+              Esther Nam designs for VR, wearables, and developer tooling — turning complex
+              enterprise systems into calm, human-centered products with restraint and clarity.
             </p>
             <div className="mt-8 flex items-center gap-4 text-sm">
               <Link to="/work" className="rounded-full bg-foreground px-5 py-2.5 text-background transition-opacity hover:opacity-80">
