@@ -108,21 +108,21 @@ function Index() {
           </div>
           <div className="md:col-span-9">
             <p className="text-display text-3xl font-normal leading-[1.15] tracking-tight md:text-5xl">
-              I make calm, durable design. Work that reads at a glance and rewards a second look —
-              built from the page outward, with type, paper, and pace doing most of the talking.
+              I design systems that feel invisible. From spatial interfaces to wearable UX —
+              work that reduces friction at scale and earns trust through clarity, not noise.
             </p>
           </div>
         </div>
 
         <div className="mt-20 grid grid-cols-2 gap-8 border-t border-border/60 pt-10 md:grid-cols-4">
           {[
-            ["28+", "Projects shipped"],
-            ["6", "Years independent"],
-            ["12", "Awards & features"],
-            ["3", "Continents served"],
+            ["Meta", "Reality Labs"],
+            ["VR / AR", "Spatial Computing"],
+            ["Enterprise", "Developer Tooling"],
+            ["Wearables", "Interaction Design"],
           ].map(([n, l]) => (
             <div key={l}>
-              <div className="text-display text-4xl font-medium md:text-6xl">{n}</div>
+              <div className="text-display text-2xl font-medium md:text-3xl">{n}</div>
               <div className="mt-2 text-sm text-muted-foreground">{l}</div>
             </div>
           ))}
