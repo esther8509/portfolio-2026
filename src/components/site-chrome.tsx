@@ -1,10 +1,9 @@
 import { Link } from "@tanstack/react-router";
 
-const navLinks: ReadonlyArray<{ to: "/" | "/work" | "/about" | "/contact"; label: string; end?: boolean }> = [
+const navLinks: ReadonlyArray<{ to: "/" | "/work" | "/about"; label: string; end?: boolean }> = [
   { to: "/", label: "Index", end: true },
   { to: "/work", label: "Work" },
   { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
