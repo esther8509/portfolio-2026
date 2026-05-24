@@ -1,4 +1,4 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects } from "@/lib/projects";
 
@@ -15,7 +15,9 @@ export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
-    return { project };
+    const index = projects.findIndex((p) => p.slug === params.slug);
+    const next = projects[(index + 1) % projects.length];
+    return { project, next };
   },
   component: ProjectDetailPage,
   notFoundComponent: () => (
@@ -29,56 +31,122 @@ export const Route = createFileRoute("/work/$slug")({
   ),
 });
 
+type Section = { heading?: string; body: string };
+
+function parseCaseStudy(text: string): { intro: string | null; sections: Section[] } {
+  const paragraphs = text.split("\n\n").map((p) => p.trim()).filter(Boolean);
+  if (paragraphs.length === 0) return { intro: null, sections: [] };
+
+  const sections: Section[] = [];
+  let intro: string | null = null;
+
+  for (const para of paragraphs) {
+    // Match "01 — Heading: body" or "Heading: body"
+    const numbered = para.match(/^(\d{2})\s*[—–-]\s*([^:]+?):\s*([\s\S]+)$/);
+    const labeled = para.match(/^([A-Z][A-Za-z0-9 +&/()]{1,60}?):\s+([\s\S]+)$/);
+
+    if (numbered) {
+      sections.push({ heading: `${numbered[1]} — ${numbered[2].trim()}`, body: numbered[3].trim() });
+    } else if (labeled) {
+      sections.push({ heading: labeled[1].trim(), body: labeled[2].trim() });
+    } else if (!intro && sections.length === 0) {
+      intro = para;
+    } else {
+      sections.push({ body: para });
+    }
+  }
+
+  return { intro, sections };
+}
+
 function ProjectDetailPage() {
-  const { project } = Route.useLoaderData();
+  const { project, next } = Route.useLoaderData();
+  const parsed = project.caseStudy ? parseCaseStudy(project.caseStudy) : { intro: null, sections: [] };
+  const projectNumber = String(projects.findIndex((p) => p.slug === project.slug) + 1).padStart(2, "0");
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      {/* Hero image */}
-      <section className="mx-auto max-w-[1400px] px-6 pt-16 md:px-10 md:pt-24">
-        <div className="overflow-hidden rounded-sm bg-muted">
-          <img
-            src={project.image}
-            alt={project.title}
-            className="aspect-[16/9] w-full object-cover"
-          />
+      {/* Title block */}
+      <section className="mx-auto max-w-[1400px] px-6 pb-12 pt-16 md:px-10 md:pb-20 md:pt-28">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
+          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+            Project № {projectNumber} / {project.year}
+          </div>
+          <div className="md:col-span-9">
+            <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
+              {project.title}
+            </h1>
+            {parsed.intro && (
+              <p className="mt-8 max-w-3xl text-display text-2xl font-medium leading-[1.2] tracking-tight text-muted-foreground md:text-3xl">
+                {parsed.intro}
+              </p>
+            )}
+          </div>
         </div>
       </section>
 
-      {/* Project meta */}
-      <section className="mx-auto max-w-[1400px] px-6 pb-8 pt-10 md:px-10 md:pb-12 md:pt-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-8">
-            <h1 className="text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
-              {project.title}
-            </h1>
-            {project.caseStudy && (
-              <div className="mt-8 max-w-2xl space-y-6 text-lg leading-relaxed text-muted-foreground">
-                {project.caseStudy.split("\n\n").map((para: string, i: number) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
-            )}
+      {/* Meta strip */}
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10">
+        <div className="grid grid-cols-2 gap-6 border-y border-border/60 py-6 md:grid-cols-4">
+          <div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Client</div>
+            <div className="mt-2 text-base font-medium">{project.client}</div>
           </div>
-          <div className="md:col-span-4">
-            <div className="space-y-6 border-t border-border/60 pt-6 md:border-t-5 md:pt-0 md:border-l md:border-t-0 md:pl-10 md:border-l-border/60">
-              <div>
-                <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Client</div>
-                <div className="mt-1 text-lg font-medium">{project.client}</div>
-              </div>
-              <div>
-                <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Year</div>
-                <div className="mt-1 text-lg font-medium">{project.year}</div>
-              </div>
-              <div>
-                <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Discipline</div>
-                <div className="mt-1 text-lg font-medium">{project.discipline}</div>
-              </div>
+          <div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Discipline</div>
+            <div className="mt-2 text-base font-medium">{project.discipline}</div>
+          </div>
+          <div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Year</div>
+            <div className="mt-2 text-base font-medium">{project.year}</div>
+          </div>
+          <div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Status</div>
+            <div className="mt-2 text-base font-medium">
+              {project.caseStudy ? "Case study" : "Coming soon"}
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Case study sections */}
+      {parsed.sections.length > 0 ? (
+        <section className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-32">
+          <div className="space-y-16 md:space-y-24">
+            {parsed.sections.map((s, i) => (
+              <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
+                <div className="md:col-span-4">
+                  {s.heading && (
+                    <h2 className="text-display text-2xl font-medium leading-tight tracking-tight md:text-3xl">
+                      {s.heading}
+                    </h2>
+                  )}
+                </div>
+                <div className="md:col-span-7 md:col-start-6">
+                  <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">{s.body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : (
+        <section className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-32">
+          <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            Case study coming soon. Reach out for the full walkthrough.
+          </p>
+        </section>
+      )}
+
+      {/* Next project */}
+      <section className="mx-auto max-w-[1400px] border-t border-border/60 px-6 py-16 md:px-10 md:py-24">
+        <Link to="/work/$slug" params={{ slug: next.slug }} className="group block">
+          <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Next project</div>
+          <div className="mt-3 text-display text-4xl font-medium tracking-tight transition-opacity group-hover:opacity-60 md:text-6xl">
+            {next.title} →
+          </div>
+        </Link>
       </section>
 
       <SiteFooter />
