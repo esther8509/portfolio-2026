@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const marquee = ["VR / AR", "Wearables", "Developer Tooling", "Enterprise", "Interaction Design", "Spatial Computing"];
+const marquee = ["VR / AR", "Wearables", "Developer Tooling", "Enterprise"];
 
 function Index() {
   const featured = projects.slice(0, 6);
@@ -28,7 +28,7 @@ function Index() {
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
             <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
-              VR / AR, Wearables, Developer Tooling, Enterprise, Interaction Design, Spatial Computing
+              VR / AR, Wearables, Developer Tooling, Enterprise
             </p>
             <div className="mt-8 text-sm">
               <Link to="/work" className="rounded-full bg-foreground px-5 py-2.5 text-background transition-opacity hover:opacity-80">
