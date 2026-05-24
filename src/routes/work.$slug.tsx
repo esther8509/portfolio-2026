@@ -1,4 +1,4 @@
-import { createFileRoute, notFound, Link } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects } from "@/lib/projects";
 
@@ -15,9 +15,7 @@ export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
-    const index = projects.findIndex((p) => p.slug === params.slug);
-    const next = projects[(index + 1) % projects.length];
-    return { project, next };
+    return { project };
   },
   component: ProjectDetailPage,
   notFoundComponent: () => (
