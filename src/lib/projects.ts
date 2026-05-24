@@ -4,6 +4,7 @@ import work3 from "@/assets/work-3.jpg";
 import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.jpg";
 import work6 from "@/assets/work-6.jpg";
+import work7 from "@/assets/work-7.jpg";
 
 export type Project = {
   slug: string;
