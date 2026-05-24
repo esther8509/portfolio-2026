@@ -21,7 +21,7 @@ function Index() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-8">
             <h1 className="text-display text-[14vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[8.5vw]">
-              Designer<br />
+              Senior Designer<br />
               <span className="italic">@Meta</span><br />
               Reality Labs
             </h1>
