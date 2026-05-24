@@ -76,12 +76,9 @@ function WorkPage() {
                   className={`${aspectClass[p.aspect]} w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]`}
                 />
               </div>
-              <div className="mt-4 flex items-baseline justify-between gap-4">
-                <div>
-                  <h3 className="text-display text-lg font-medium tracking-tight">{p.title}</h3>
-                  <p className="text-sm text-muted-foreground">{p.discipline}</p>
-                </div>
-                <span className="text-sm text-muted-foreground">{p.year}</span>
+              <div className="mt-4">
+                <h3 className="text-display text-lg font-medium tracking-tight">{p.title}</h3>
+                <p className="text-sm text-muted-foreground">{p.discipline}</p>
               </div>
             </Link>
           ))}
