@@ -22,6 +22,9 @@ function Index() {
             <h1 className="text-display text-[7vw] font-medium leading-[1.1] tracking-[-0.04em] md:text-[4.5vw]">
               Senior Designer<br /><span className="italic">@Meta Reality Labs</span>
             </h1>
+            <p className="text-display mt-3 text-sm tracking-tight text-muted-foreground md:text-base">
+              previously @alaska airlines, keurig dr pepper
+            </p>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
             <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">

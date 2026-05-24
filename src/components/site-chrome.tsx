@@ -9,13 +9,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10">
-        <Link to="/" className="flex flex-col">
-          <span className="text-display text-xl font-semibold tracking-tight md:text-2xl">
-            Esther Nam
-          </span>
-          <span className="text-display text-sm tracking-tight text-muted-foreground md:text-base">
-            previously @alaska airlines, keurig dr pepper
-          </span>
+        <Link to="/" className="text-display text-xl font-semibold tracking-tight md:text-2xl">
+          Esther Nam
         </Link>
         <nav className="flex items-center gap-6 text-xl md:gap-10 md:text-2xl">
           {navLinks.map((l) => (
