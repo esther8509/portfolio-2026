@@ -46,10 +46,10 @@ export function SiteFooter() {
           let's chat
         </h2>
         <a
-          href="mailto:hello@esthernam.studio"
+          href="mailto:esthernamhy@gmail.com"
           className="mt-8 inline-block text-display text-lg underline decoration-1 underline-offset-[6px] hover:opacity-60"
         >
-          hello@esthernam.studio
+          esthernamhy@gmail.com
         </a>
         <div className="mt-16 border-t border-border/60 pt-6 text-xs text-muted-foreground">
           <span>© 2026 Esther Nam</span>
