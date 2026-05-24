@@ -21,5 +21,5 @@ export const projects: Project[] = [
   { slug: "kassette", title: "Kassette Quarterly", client: "Kassette", year: "2024", discipline: "Editorial Design", image: work3, aspect: "wide" },
   { slug: "paper-essays", title: "Paper Essays", client: "Self-initiated", year: "2024", discipline: "Photography", image: work4, aspect: "tall" },
   { slug: "linea", title: "Linea OS", client: "Linea", year: "2024", discipline: "Product Design", image: work5, aspect: "square" },
-  { slug: "ink-studies", title: "Ink Studies, no. 03", client: "Self-initiated", year: "2023", discipline: "Type & Mark", image: work6, aspect: "tall" },
+  { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2023", discipline: "Connected Product Design", image: work6, aspect: "square" },
 ];
