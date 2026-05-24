@@ -83,9 +83,8 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-border/60 pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
-          <span>© 2026 Esther Nam. All rights reserved.</span>
-          <span className="uppercase tracking-[0.2em]">Set in Space Grotesk & DM Sans</span>
+        <div className="mt-16 border-t border-border/60 pt-6 text-xs text-muted-foreground">
+          <span>© 2026 Esther Nam</span>
         </div>
       </div>
     </footer>
