@@ -77,47 +77,26 @@ function Index() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-12">
-          {featured.map((p, i) => {
-            // hero+grid: first one large, rest in 3-up
-            if (i === 0) {
-              return (
-                <Link to="/work" key={p.slug} className="group md:col-span-12">
-                  <div className="overflow-hidden rounded-sm bg-muted">
-                    <img
-                      src={p.image}
-                      alt={p.title}
-                      loading="lazy"
-                      className="aspect-[16/10] w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                    />
-                  </div>
-                  <div className="mt-5 flex items-baseline justify-between gap-6">
-                    <div>
-                      <h3 className="text-display text-2xl font-medium tracking-tight md:text-3xl">{p.title}</h3>
-                      <p className="mt-1 text-sm text-muted-foreground">{p.discipline} — {p.client}</p>
-                    </div>
-                    <span className="text-sm text-muted-foreground">{p.year}</span>
-                  </div>
-                </Link>
-              );
-            }
-            return (
-              <Link to="/work" key={p.slug} className="group md:col-span-4">
-                <div className="overflow-hidden rounded-sm bg-muted">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    loading="lazy"
-                    className="aspect-[4/5] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-                  />
-                </div>
-                <div className="mt-4">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-3">
+          {featured.map((p) => (
+            <Link to="/work" key={p.slug} className="group">
+              <div className="overflow-hidden rounded-sm bg-muted">
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+              </div>
+              <div className="mt-4 flex items-baseline justify-between gap-4">
+                <div>
                   <h3 className="text-display text-xl font-medium tracking-tight">{p.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{p.discipline} · {p.year}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{p.discipline} · {p.client}</p>
                 </div>
-              </Link>
-            );
-          })}
+                <span className="shrink-0 text-sm text-muted-foreground">{p.year}</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
