@@ -10,7 +10,7 @@ export const Route = createFileRoute("/")({
 const marquee = ["VR / AR", "Wearables", "Developer Tooling", "Enterprise", "Interaction Design", "Spatial Computing"];
 
 function Index() {
-  const featured = projects.slice(0, 4);
+  const featured = projects.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
