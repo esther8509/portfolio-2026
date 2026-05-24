@@ -58,7 +58,7 @@ function parseCaseStudy(text: string): { intro: string | null; sections: Section
 }
 
 function ProjectDetailPage() {
-  const { project, next } = Route.useLoaderData();
+  const { project } = Route.useLoaderData();
   const parsed = project.caseStudy ? parseCaseStudy(project.caseStudy) : { intro: null, sections: [] };
   const projectNumber = String(projects.findIndex((p) => p.slug === project.slug) + 1).padStart(2, "0");
 
