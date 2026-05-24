@@ -24,10 +24,15 @@ export function SiteHeader() {
               {l.label}
             </Link>
           ))}
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Resume
+          </a>
         </nav>
-        <div className="hidden text-xs uppercase tracking-[0.2em] text-muted-foreground md:block">
-          Seoul · 2026
-        </div>
       </div>
     </header>
   );
