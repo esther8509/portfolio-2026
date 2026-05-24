@@ -51,7 +51,7 @@ function WorkPage() {
         {projects.map((p, i) => (
           <a
             key={p.slug}
-            href="#grid"
+            href={`/work/${p.slug}`}
             className="group grid grid-cols-12 items-center border-b border-border/60 py-5 transition-colors hover:bg-secondary/60"
           >
             <div className="col-span-1 text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</div>
