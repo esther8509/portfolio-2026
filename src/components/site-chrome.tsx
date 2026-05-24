@@ -9,7 +9,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-5 md:px-10">
-        <Link to="/" className="text-display text-base font-semibold tracking-tight">
+        <Link to="/" className="text-display text-xl font-semibold tracking-tight md:text-2xl">
           Esther Nam
         </Link>
         <nav className="flex items-center gap-6 text-sm md:gap-10">
