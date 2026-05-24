@@ -27,10 +27,7 @@ function WorkPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-16 md:px-10 md:pb-24 md:pt-24">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Index of Work / 2023 — 2026
-          </div>
-          <div className="md:col-span-9">
+          <div className="md:col-span-9 md:col-start-4">
             <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
               Twenty-eight projects.<br />
               <span className="italic text-muted-foreground">A small, careful catalogue.</span>
