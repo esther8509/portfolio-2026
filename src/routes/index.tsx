@@ -78,45 +78,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Manifesto */}
-      <section className="mx-auto mt-32 max-w-[1400px] px-6 md:px-10">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
-          <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground md:col-span-3">
-            02 — Approach
-          </div>
-          <div className="md:col-span-9">
-            <p className="text-display text-3xl font-normal leading-[1.15] tracking-tight md:text-5xl">
-              I design systems that feel invisible. From spatial interfaces to wearable UX —
-              work that reduces friction at scale and earns trust through clarity, not noise.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-20 grid grid-cols-2 gap-8 border-t border-border/60 pt-10 md:grid-cols-4">
-          {[
-            ["Meta", "Reality Labs"],
-            ["VR / AR", "Spatial Computing"],
-            ["Enterprise", "Developer Tooling"],
-            ["Wearables", "Interaction Design"],
-          ].map(([n, l]) => (
-            <div key={l}>
-              <div className="text-display text-2xl font-medium md:text-3xl">{n}</div>
-              <div className="mt-2 text-sm text-muted-foreground">{l}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Clients strip */}
-      <section className="mx-auto mt-32 max-w-[1400px] px-6 md:px-10">
-        <div className="mb-8 text-xs uppercase tracking-[0.25em] text-muted-foreground">03 — Expertise</div>
-        <div className="grid grid-cols-2 gap-y-6 border-y border-border/60 py-10 text-display text-2xl md:grid-cols-4 md:text-3xl">
-          {["Meta", "Reality Labs", "VR / AR", "Wearables", "Enterprise", "Developer Tooling", "Spatial UX", "Interaction Design"].map((c) => (
-            <span key={c} className="opacity-80">{c}</span>
-          ))}
-        </div>
-      </section>
-
       <SiteFooter />
     </div>
   );
