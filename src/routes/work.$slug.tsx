@@ -1,4 +1,4 @@
-import { createFileRoute, notFound, Link } from "@tanstack/react-router";
+import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects } from "@/lib/projects";
 
@@ -15,9 +15,7 @@ export const Route = createFileRoute("/work/$slug")({
   loader: ({ params }) => {
     const project = projects.find((p) => p.slug === params.slug);
     if (!project) throw notFound();
-    const index = projects.findIndex((p) => p.slug === params.slug);
-    const next = projects[(index + 1) % projects.length];
-    return { project, next };
+    return { project };
   },
   component: ProjectDetailPage,
   notFoundComponent: () => (
@@ -60,7 +58,7 @@ function parseCaseStudy(text: string): { intro: string | null; sections: Section
 }
 
 function ProjectDetailPage() {
-  const { project, next } = Route.useLoaderData();
+  const { project } = Route.useLoaderData();
   const parsed = project.caseStudy ? parseCaseStudy(project.caseStudy) : { intro: null, sections: [] };
   const projectNumber = String(projects.findIndex((p) => p.slug === project.slug) + 1).padStart(2, "0");
 
@@ -138,16 +136,6 @@ function ProjectDetailPage() {
           </p>
         </section>
       )}
-
-      {/* Next project */}
-      <section className="mx-auto max-w-[1400px] border-t border-border/60 px-6 py-16 md:px-10 md:py-24">
-        <Link to="/work/$slug" params={{ slug: next.slug }} className="group block">
-          <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Next project</div>
-          <div className="mt-3 text-display text-4xl font-medium tracking-tight transition-opacity group-hover:opacity-60 md:text-6xl">
-            {next.title} →
-          </div>
-        </Link>
-      </section>
 
       <SiteFooter />
     </div>
