@@ -20,10 +20,8 @@ function Index() {
       <section className="mx-auto max-w-[1400px] px-6 pb-16 pt-12 md:px-10 md:pb-24 md:pt-20">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-8">
-            <h1 className="text-display text-[12vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[7vw]">
-              Senior Designer<br />
-              <span className="italic">@Meta</span><br />
-              Reality Labs
+            <h1 className="text-display text-[7vw] font-medium leading-[1.1] tracking-[-0.04em] md:text-[4.5vw]">
+              Senior Designer <span className="italic">@Meta</span> Reality Labs
             </h1>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
