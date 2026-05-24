@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects } from "@/lib/projects";
-import heroImg from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -25,29 +24,20 @@ function Index() {
             </h1>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
-            <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
-              Esther Nam designs for VR, wearables, and developer tooling — turning complex
-              enterprise systems into calm, human-centered products with restraint and clarity.
-            </p>
-            <div className="mt-8 flex items-center gap-4 text-sm">
+            <ul className="max-w-sm space-y-1.5 text-base leading-relaxed text-muted-foreground md:text-lg">
+              <li>VR / AR</li>
+              <li>Wearables</li>
+              <li>Developer Tooling</li>
+              <li>Enterprise</li>
+              <li>Interaction Design</li>
+              <li>Spatial Computing</li>
+            </ul>
+            <div className="mt-8 text-sm">
               <Link to="/work" className="rounded-full bg-foreground px-5 py-2.5 text-background transition-opacity hover:opacity-80">
-                View selected work →
-              </Link>
-              <Link to="/about" className="underline decoration-1 underline-offset-4 hover:opacity-60">
-                About
+                View work →
               </Link>
             </div>
           </div>
-        </div>
-
-        <div className="mt-16 overflow-hidden rounded-sm md:mt-24">
-          <img
-            src={heroImg}
-            alt="Folded paper catching soft light — Esther Nam studio"
-            width={1600}
-            height={1200}
-            className="h-[55vh] w-full object-cover md:h-[70vh]"
-          />
         </div>
       </section>
 
