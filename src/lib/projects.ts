@@ -14,6 +14,7 @@ export type Project = {
   discipline: string;
   image: string;
   aspect: "tall" | "wide" | "square";
+  caseStudy?: string;
 };
 
 export const projects: Project[] = [
