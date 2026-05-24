@@ -19,7 +19,7 @@ export const projects: Project[] = [
   { slug: "meta-wearables", title: "VR System Apps", client: "Meta Reality Labs", year: "2025", discipline: "Wearables", image: work1, aspect: "square" },
   { slug: "developer-tools", title: "Developer Tools", client: "Meta", year: "2025", discipline: "Developer Tooling", image: work2, aspect: "tall" },
   { slug: "world-desktop-editor", title: "World Desktop Editor", client: "Meta", year: "2024", discipline: "Spatial Tooling", image: work3, aspect: "wide" },
-  { slug: "paper-essays", title: "Paper Essays", client: "Self-initiated", year: "2024", discipline: "Photography", image: work4, aspect: "tall" },
+  { slug: "quest-for-business", title: "Quest for Business", client: "Horizon Managed Services", year: "2024", discipline: "Enterprise VR", image: work4, aspect: "tall" },
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2024", discipline: "Product Design", image: work5, aspect: "square" },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2023", discipline: "Connected Product Design", image: work6, aspect: "square" },
 ];
