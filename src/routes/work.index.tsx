@@ -38,26 +38,22 @@ function WorkPage() {
 
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-12 border-y border-border/60 py-3 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-          <div className="col-span-1">№</div>
-          <div className="col-span-5">Project</div>
+          <div className="col-span-6">Project</div>
           <div className="col-span-3">Discipline</div>
-          <div className="col-span-2">Client</div>
-          <div className="col-span-1 text-right">Year</div>
+          <div className="col-span-3">Client</div>
         </div>
-        {projects.map((p, i) => (
+        {projects.map((p) => (
           <Link
             key={p.slug}
             to="/work/$slug"
             params={{ slug: p.slug }}
             className="group grid grid-cols-12 items-center border-b border-border/60 py-5 transition-colors hover:bg-secondary/60"
           >
-            <div className="col-span-1 text-sm text-muted-foreground">{String(i + 1).padStart(2, "0")}</div>
-            <div className="col-span-5 text-display text-xl font-medium tracking-tight md:text-2xl">
+            <div className="col-span-6 text-display text-xl font-medium tracking-tight md:text-2xl">
               {p.title}
             </div>
             <div className="col-span-3 text-sm">{p.discipline}</div>
-            <div className="col-span-2 text-sm text-muted-foreground">{p.client}</div>
-            <div className="col-span-1 text-right text-sm text-muted-foreground">{p.year}</div>
+            <div className="col-span-3 text-sm text-muted-foreground">{p.client}</div>
           </Link>
         ))}
       </section>
