@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const marquee = ["Brand Identity", "Editorial", "Art Direction", "Type Design", "Photography", "Product"];
+const marquee = ["VR / AR", "Wearables", "Developer Tooling", "Enterprise", "Interaction Design", "Spatial Computing"];
 
 function Index() {
   const featured = projects.slice(0, 4);
