@@ -1,7 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects } from "@/lib/projects";
-import heroImg from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
