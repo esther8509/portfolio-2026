@@ -12,7 +12,7 @@ export function SiteHeader() {
         <Link to="/" className="text-display text-xl font-semibold tracking-tight md:text-2xl">
           Esther Nam
         </Link>
-        <nav className="flex items-center gap-6 text-display text-xl tracking-tight md:gap-10 md:text-2xl">
+        <nav className="flex items-center gap-6 text-display text-base tracking-tight md:gap-10 md:text-lg">
           {navLinks.map((l) => (
             <Link
               key={l.to}
