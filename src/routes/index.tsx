@@ -55,7 +55,7 @@ function Index() {
       <section className="mx-auto max-w-[1100px] px-6 pt-24 md:px-10 md:pt-32">
         <div className="grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-3">
           {featured.map((p) => (
-            <Link to="/work" key={p.slug} className="group">
+            <Link to="/work/$slug" params={{ slug: p.slug }} key={p.slug} className="group">
               <div className="overflow-hidden rounded-sm bg-muted">
                 <img
                   src={p.image}
