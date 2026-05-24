@@ -70,8 +70,9 @@ function WorkPage() {
         <div className="mb-10 text-xs uppercase tracking-[0.25em] text-muted-foreground">Visual archive</div>
         <div className="grid grid-cols-1 gap-x-6 gap-y-14 md:grid-cols-6">
           {projects.map((p, i) => (
-            <div
+            <a
               key={p.slug}
+              href={`/work/${p.slug}`}
               className={`hover-lift group ${i % 5 === 0 ? "md:col-span-4" : "md:col-span-2"}`}
             >
               <div className="overflow-hidden rounded-sm bg-muted">
@@ -89,7 +90,7 @@ function WorkPage() {
                 </div>
                 <span className="text-sm text-muted-foreground">{p.year}</span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
