@@ -139,16 +139,6 @@ function ProjectDetailPage() {
         </section>
       )}
 
-      {/* Next project */}
-      <section className="mx-auto max-w-[1400px] border-t border-border/60 px-6 py-16 md:px-10 md:py-24">
-        <Link to="/work/$slug" params={{ slug: next.slug }} className="group block">
-          <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Next project</div>
-          <div className="mt-3 text-display text-4xl font-medium tracking-tight transition-opacity group-hover:opacity-60 md:text-6xl">
-            {next.title} →
-          </div>
-        </Link>
-      </section>
-
       <SiteFooter />
     </div>
   );
