@@ -45,7 +45,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
           <div className="md:col-span-6">
             <h2 className="text-display text-4xl font-medium leading-[0.95] tracking-tight md:text-6xl">
-              Let's make<br />something<br />considered.
+              If you like my work,<br />please reach out
             </h2>
             <a
               href="mailto:hello@esthernam.studio"
