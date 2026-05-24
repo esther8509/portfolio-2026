@@ -55,16 +55,6 @@ function Index() {
 
       {/* Selected Work — hero + grid */}
       <section className="mx-auto max-w-[1400px] px-6 pt-24 md:px-10 md:pt-32">
-        <div className="mb-12 flex items-end justify-between gap-6">
-          <div>
-            <div className="mb-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">01 — Selected</div>
-            <h2 className="text-display text-4xl font-medium tracking-tight md:text-6xl">Work, recently.</h2>
-          </div>
-          <Link to="/work" className="hidden text-sm underline decoration-1 underline-offset-4 hover:opacity-60 md:inline">
-            Full archive →
-          </Link>
-        </div>
-
         <div className="grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-3">
           {featured.map((p) => (
             <Link to="/work" key={p.slug} className="group">
