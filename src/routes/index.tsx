@@ -22,7 +22,7 @@ function Index() {
           <div className="md:col-span-8">
             <div className="mb-8 flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
               <span className="inline-block size-1.5 rounded-full bg-foreground" />
-              Independent design practice — est. 2019
+              Est. 2019
             </div>
             <h1 className="text-display text-[14vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[8.5vw]">
               A quiet<br />
