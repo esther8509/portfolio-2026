@@ -131,9 +131,9 @@ function Index() {
 
       {/* Clients strip */}
       <section className="mx-auto mt-32 max-w-[1400px] px-6 md:px-10">
-        <div className="mb-8 text-xs uppercase tracking-[0.25em] text-muted-foreground">03 — Selected clients</div>
+        <div className="mb-8 text-xs uppercase tracking-[0.25em] text-muted-foreground">03 — Expertise</div>
         <div className="grid grid-cols-2 gap-y-6 border-y border-border/60 py-10 text-display text-2xl md:grid-cols-4 md:text-3xl">
-          {["Noyu", "Kassette", "Studio Aoyama", "Linea", "Maru Press", "Folio", "Ondol", "Kinto"].map((c) => (
+          {["Meta", "Reality Labs", "VR / AR", "Wearables", "Enterprise", "Developer Tooling", "Spatial UX", "Interaction Design"].map((c) => (
             <span key={c} className="opacity-80">{c}</span>
           ))}
         </div>
