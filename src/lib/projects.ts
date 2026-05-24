@@ -16,7 +16,7 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  { slug: "meta-wearables", title: "Ray-Ban Meta", client: "Meta Reality Labs", year: "2025", discipline: "Wearables", image: work1, aspect: "square" },
+  { slug: "meta-wearables", title: "VR System Apps", client: "Meta Reality Labs", year: "2025", discipline: "Wearables", image: work1, aspect: "square" },
   { slug: "developer-tools", title: "Developer Tools", client: "Meta", year: "2025", discipline: "Developer Tooling", image: work2, aspect: "tall" },
   { slug: "world-desktop-editor", title: "World Desktop Editor", client: "Meta", year: "2024", discipline: "Spatial Tooling", image: work3, aspect: "wide" },
   { slug: "paper-essays", title: "Paper Essays", client: "Self-initiated", year: "2024", discipline: "Photography", image: work4, aspect: "tall" },
