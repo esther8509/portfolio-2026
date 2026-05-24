@@ -24,14 +24,9 @@ function Index() {
             </h1>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
-            <ul className="max-w-sm space-y-1.5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              <li>VR / AR</li>
-              <li>Wearables</li>
-              <li>Developer Tooling</li>
-              <li>Enterprise</li>
-              <li>Interaction Design</li>
-              <li>Spatial Computing</li>
-            </ul>
+            <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
+              VR / AR, Wearables, Developer Tooling, Enterprise, Interaction Design, Spatial Computing
+            </p>
             <div className="mt-8 text-sm">
               <Link to="/work" className="rounded-full bg-foreground px-5 py-2.5 text-background transition-opacity hover:opacity-80">
                 View work →
