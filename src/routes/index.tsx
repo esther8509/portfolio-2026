@@ -20,7 +20,7 @@ function Index() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-8">
             <h1 className="text-display text-[7vw] font-medium leading-[1.1] tracking-[-0.04em] md:text-[4.5vw]">
-              Senior Designer <span className="italic">@Meta</span> Reality Labs
+              Senior Designer<br /><span className="italic">@Meta Reality Labs</span>
             </h1>
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
