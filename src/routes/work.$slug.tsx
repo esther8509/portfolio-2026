@@ -56,7 +56,7 @@ function ProjectDetailPage() {
             </h1>
             {project.caseStudy && (
               <div className="mt-8 max-w-2xl space-y-6 text-lg leading-relaxed text-muted-foreground">
-                {project.caseStudy.split("\n\n").map((para, i) => (
+                {project.caseStudy.split("\n\n").map((para: string, i: number) => (
                   <p key={i}>{para}</p>
                 ))}
               </div>
