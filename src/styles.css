@@ -94,13 +94,6 @@
     font-family: var(--font-display);
     letter-spacing: -0.03em;
   }
-  .marquee {
-    animation: marquee 40s linear infinite;
-  }
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
   .hover-lift {
     transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
