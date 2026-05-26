@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const marquee = ["Developer Tooling", "Enterprise"];
+
 
 function Index() {
   const featured = projects.slice(0, 7);
@@ -34,17 +34,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Marquee */}
-      <section className="overflow-hidden border-y border-border/60 py-6">
-        <div className="marquee flex whitespace-nowrap text-display text-xl md:text-3xl">
-          {[...marquee, ...marquee, ...marquee, ...marquee].map((m, i) => (
-            <span key={i} className="mx-8 inline-flex items-center gap-8">
-              {m}
-              <span aria-hidden className="text-muted-foreground">✦</span>
-            </span>
-          ))}
-        </div>
-      </section>
 
       {/* Selected Work — hero + grid */}
       <section className="mx-auto max-w-[1100px] px-6 pt-24 md:px-10 md:pt-32">
