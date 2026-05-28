@@ -56,7 +56,7 @@ export const projects: Project[] = [
       },
       {
         type: "section",
-        heading: "The mandate",
+        heading: "Overview",
         body:
           "I was the sole designer across three default OS-level apps shipping with Meta Quest and future unreleased devices: Clock, Files, and Calendar. Each app had a different starting point. Clock was zero to one, while Files and Calendar were iterative improvements on what existed before. All three were designed for VR and built with future form factors in mind.",
       },
@@ -223,7 +223,7 @@ export const projects: Project[] = [
       },
       {
         type: "section",
-        heading: "The mandate",
+        heading: "Overview",
         body:
           "I owned both ends of that problem. As the sole designer across two interconnected products, I redesigned the developer center from the ground up — creating a scalable entry point for a growing ecosystem of build paths and developer types — and built Feedback Hub zero to one, giving developers a direct, structured line to Meta for the first time. Two products, one team, one mission: meet developers where they are and give them what they need to build.",
       },
