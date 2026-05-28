@@ -75,24 +75,6 @@ export const projects: Project[] = [
           "The app was built for gaming and productivity use cases — the kind of lightweight utility you reach for mid-session. It has three tabs: Clock, Alarm, and Timer. Simple, focused, and designed to feel native to the platform in a way competitors haven't managed. This was the first real proof of a new way of working. The full process story lives in the AI-native section.",
       },
       {
-        type: "image-grid",
-        columns: 2,
-        images: [
-          { src: clockDigital, alt: "Clock tab — digital mode showing 5:56:30 AM, Sunday March 8, 2026, floating in a Horizon Worlds environment" },
-          { src: clockAnalog, alt: "Clock tab — analog face with violet hour, minute, and second hands floating in a Horizon Worlds environment" },
-          { src: clockAlarm, alt: "Alarm tab — New Alarm modal with hour and minute inputs and inline validation" },
-          { src: clockTimer, alt: "Timer — Time's Up dialog with alarm icon and Dismiss button, shown in a virtual living room" },
-        ],
-        caption: "Early builds pushed straight onto the headset — Clock, Alarm, and Timer tabs iterated live in-VR.",
-      },
-      {
-        type: "image",
-        src: clockMidfi,
-        alt: "Mid-fidelity Clock design — light analog face with numerals at 12, 3, 6, 9 inside a dark rounded surface, with Clock, Alarms, and Timers tabs",
-        caption: "Mid-fidelity exploration — refining the face, tab system, and hierarchy before the final shipped design.",
-        aspect: "wide",
-      },
-      {
         type: "image",
         src: clockHifi,
         alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
