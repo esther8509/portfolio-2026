@@ -54,12 +54,8 @@ export const projects: Project[] = [
         body:
           "Every operating system needs a foundation. For Meta Quest, that foundation was missing. While competitors like Apple Vision Pro had utility apps, none had done them particularly well — treating them as afterthoughts rather than native, purposeful experiences. Our team saw the gap and decided to close it, starting with the apps users were already searching for.",
       },
-      {
-        type: "section",
-        heading: "Overview",
-        body:
-          "I was the sole designer across three default OS-level apps shipping with Meta Quest and future unreleased devices: Clock, Files, and Calendar. Each app had a different starting point. Clock was zero to one, while Files and Calendar were iterative improvements on what existed before. All three were designed for VR and built with future form factors in mind.",
-      },
+
+
 
       {
         type: "part",
@@ -221,12 +217,8 @@ export const projects: Project[] = [
         body:
           "Building for developers is different. The people using these tools are technical, opinionated, and have zero patience for friction. They'll go around a bad experience — and at Meta, they were. Bug reports were landing on Reddit and Twitter. The developer center was buried under outdated Oculus branding and thousands of pages of documentation with no clear path through.",
       },
-      {
-        type: "section",
-        heading: "Overview",
-        body:
-          "I owned both ends of that problem. As the sole designer across two interconnected products, I redesigned the developer center from the ground up — creating a scalable entry point for a growing ecosystem of build paths and developer types — and built Feedback Hub zero to one, giving developers a direct, structured line to Meta for the first time. Two products, one team, one mission: meet developers where they are and give them what they need to build.",
-      },
+
+
 
       {
         type: "part",
