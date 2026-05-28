@@ -157,13 +157,14 @@ function ProjectDetailPage() {
                 );
               }
               if (b.type === "image") {
-                const aspect =
-                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
                 return (
                   <figure key={i} className="space-y-4">
-                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
-                      <img src={b.src} alt={b.alt} className="h-full w-full object-cover" loading="lazy" />
-                    </div>
+                    <img
+                      src={b.src}
+                      alt={b.alt}
+                      className="h-auto w-full rounded-md"
+                      loading="lazy"
+                    />
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                   </figure>
                 );
@@ -185,22 +186,18 @@ function ProjectDetailPage() {
                 );
               }
               if (b.type === "video") {
-                const aspect =
-                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
                 return (
                   <figure key={i} className="space-y-4">
-                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
-                      <video
-                        src={b.src}
-                        poster={b.poster}
-                        className="h-full w-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        controls
-                      />
-                    </div>
+                    <video
+                      src={b.src}
+                      poster={b.poster}
+                      className="h-auto w-full rounded-md"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                    />
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                   </figure>
                 );
