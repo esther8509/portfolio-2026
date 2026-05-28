@@ -176,9 +176,7 @@ function ProjectDetailPage() {
                   <figure key={i} className="space-y-4">
                     <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
                       {b.images.map((img, j) => (
-                        <div key={j} className="aspect-[4/3] overflow-hidden rounded-lg bg-muted/30">
-                          <img src={img.src} alt={img.alt} className="h-full w-full object-cover" loading="lazy" />
-                        </div>
+                        <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
                       ))}
                     </div>
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
