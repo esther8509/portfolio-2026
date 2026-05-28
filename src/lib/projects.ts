@@ -353,7 +353,92 @@ export const projects: Project[] = [
       },
     ],
   },
-  { slug: "quest-for-business", title: "Quest for Business", client: "Horizon Managed Services", year: "2024", discipline: "Enterprise VR", image: work4, aspect: "tall", caseStudy: "Zero to one enterprise admin tool for managing fleets of Quest headsets at scale\n\nUsers: IT admins across varying enterprise types and sizes\n\nKey design challenge: configuring roles, permissions, and workflows across different IT admin contexts\n\nLead designer" },
+  {
+    slug: "quest-for-business",
+    title: "Quest for Business",
+    client: "Horizon Managed Services",
+    year: "2024",
+    discipline: "Enterprise VR",
+    image: work4,
+    aspect: "tall",
+    caseStudyBlocks: [
+      {
+        type: "intro",
+        body:
+          "Managing a fleet of VR headsets at scale is a fundamentally different problem than managing phones or laptops. The hardware is new, the use cases are varied, and the IT admins responsible for deployment range from small business owners wearing multiple hats to enterprise IT teams with complex security requirements. When Meta decided to build a first-party device management solution, there was nothing to start from. I was the sole designer on Device Manager, the core surface within what is now Meta Horizon Managed Services, working with a team of 10+ engineers and 1 PM. The tool gives IT admins centralized control over their entire fleet of Quest headsets including bulk provisioning, device presets, status monitoring, remote wipe, find my device, PIN reset, and conflict resolution when connecting or detecting devices. It also laid the groundwork for third-party MDM integrations with partners like ArborXR, Ivanti, and Microsoft Intune.",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 1",
+        title: "The core design problem",
+        subtitle: "Presets across SMB, mid-market, and enterprise",
+      },
+      {
+        type: "section",
+        heading: "The core design problem",
+        body:
+          "The hardest problem wasn't the feature list. It was presets. Different organizations need fundamentally different configurations out of the box. A small business deploying five headsets for training has completely different needs than a large enterprise rolling out hundreds of devices across multiple locations. Getting presets wrong meant IT admins would either be overwhelmed by complexity or unable to configure what they actually needed. I led user research across different enterprise types and sizes to map exactly what each segment needed, the specific rules, permissions, and workflows that mattered at small, medium, and large scale. That research directly shaped the preset system, giving admins a starting point that matched their context without requiring them to build from scratch.",
+      },
+      {
+        type: "placeholder",
+        label: "Preset design exploration",
+        caption: "Extensive ideation and iterations across SMB, mid-market, and enterprise configurations",
+        aspect: "wide",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 2",
+        title: "Conflict resolution",
+        subtitle: "Contextual blocking modals and warnings",
+      },
+      {
+        type: "section",
+        heading: "Conflict resolution",
+        body:
+          "Another significant design challenge was conflict resolution. Certain device management actions carry serious consequences — wiping a device, for example, can run into privacy concerns or data complications that need to be surfaced before the admin proceeds. The design solution was a system of contextual blocking modals and warnings that appeared at the right moment depending on the specific situation. With dozens of permutations to account for across different actions, device states, and enterprise contexts, mapping and designing this system required careful logic and close collaboration with engineering.",
+      },
+      {
+        type: "placeholder",
+        label: "Conflict resolution flow",
+        caption: "Contextual warning and blocking modal examples across device states",
+        aspect: "wide",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 3",
+        title: "Features",
+        subtitle: "Core surfaces across the admin experience",
+      },
+      {
+        type: "section",
+        heading: "Features",
+        body:
+          "Core surfaces across the Device Manager admin experience, from bulk provisioning through day-to-day fleet operations.",
+      },
+      {
+        type: "placeholder",
+        label: "Device Manager screenshots",
+        caption: "Bulk provisioning, device presets, status dashboard, remote wipe, find my device",
+        aspect: "wide",
+      },
+
+      {
+        type: "section",
+        heading: "Outcome",
+        body:
+          "During the development period, the product helped land significant enterprise deals including Walmart and Staples, a direct signal that the tool was credible and compelling enough for large-scale deployment.",
+      },
+      {
+        type: "placeholder",
+        label: "Outcome metric",
+        caption: "Specific deal details and metrics — to be added when available",
+        aspect: "wide",
+      },
+    ],
+  },
 
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2024", discipline: "Product Design", image: work5, aspect: "square" },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2023", discipline: "Connected Product Design", image: work6, aspect: "square" },
