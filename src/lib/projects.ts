@@ -10,6 +10,7 @@ import clockAnalog from "@/assets/clock-analog.jpeg";
 import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
 import clockMidfi from "@/assets/clock-midfi.png";
+import clockHifi from "@/assets/clock-hifi.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -88,6 +89,13 @@ export const projects: Project[] = [
         src: clockMidfi,
         alt: "Mid-fidelity Clock design — light analog face with numerals at 12, 3, 6, 9 inside a dark rounded surface, with Clock, Alarms, and Timers tabs",
         caption: "Mid-fidelity exploration — refining the face, tab system, and hierarchy before the final shipped design.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockHifi,
+        alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
+        caption: "Latest high-fidelity exploration (in progress) — built on the unreleased AI glasses design system, leaning into liquid glass and translucent augments instead of hard color blocks.",
         aspect: "wide",
       },
 
