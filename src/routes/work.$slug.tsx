@@ -115,12 +115,11 @@ function ProjectDetailPage() {
               return blocks.map((b, i) => {
                 if (b.type === "intro") return null;
                 const isFirstVisible = visibleIndex === 0;
-                if (b.type === "part" || b.type === "section" || b.type === "placeholder" || b.type === "image" || b.type === "image-grid" || b.type === "video") {
-                  visibleIndex++;
-                }
+                const isVisible = b.type !== "intro";
+                if (isVisible) visibleIndex++;
                 if (b.type === "part") {
                   return (
-                    <div key={i} className={isFirstVisible ? "pt-0" : "border-t border-border/60 pt-12 md:pt-20"}>
+                    <div key={i} className={isFirstVisible ? "" : "border-t border-border/60 pt-12 md:pt-20"}>
                       {b.eyebrow && (
                         <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
                           {b.eyebrow}
@@ -134,83 +133,84 @@ function ProjectDetailPage() {
                       )}
                     </div>
                   );
-              }
-              if (b.type === "section") {
-                return (
-                  <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
-                    <div className="md:col-span-4">
-                      <h3 className="text-display text-2xl font-medium leading-tight tracking-tight md:text-3xl">
-                        {b.heading}
-                      </h3>
+                }
+                if (b.type === "section") {
+                  return (
+                    <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
+                      <div className="md:col-span-4">
+                        <h3 className="text-display text-2xl font-medium leading-tight tracking-tight md:text-3xl">
+                          {b.heading}
+                        </h3>
+                      </div>
+                      <div className="md:col-span-7 md:col-start-6">
+                        <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">{b.body}</p>
+                      </div>
                     </div>
-                    <div className="md:col-span-7 md:col-start-6">
-                      <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">{b.body}</p>
-                    </div>
-                  </div>
-                );
-              }
-              if (b.type === "placeholder") {
-                const aspect =
-                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
-                return (
-                  <figure key={i} className="space-y-4">
-                    <div
-                      className={`${aspect} flex w-full items-center justify-center rounded-lg border border-dashed border-border/70 bg-muted/30`}
-                    >
-                      <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                        {b.label}
-                      </span>
-                    </div>
-                    <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>
-                  </figure>
-                );
-              }
-              if (b.type === "image") {
-                return (
-                  <figure key={i} className="space-y-4">
-                    <img
-                      src={b.src}
-                      alt={b.alt}
-                      className="h-auto w-full rounded-md"
-                      loading="lazy"
-                    />
-                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
-                  </figure>
-                );
-              }
-              if (b.type === "image-grid") {
-                const cols = b.columns ?? 2;
-                const colClass = cols === 4 ? "md:grid-cols-4" : cols === 3 ? "md:grid-cols-3" : "md:grid-cols-2";
-                return (
-                  <figure key={i} className="space-y-4">
-                    <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
-                      {b.images.map((img, j) => (
-                        <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
-                      ))}
-                    </div>
-                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
-                  </figure>
-                );
-              }
-              if (b.type === "video") {
-                return (
-                  <figure key={i} className="space-y-4">
-                    <video
-                      src={b.src}
-                      poster={b.poster}
-                      className="h-auto w-full rounded-md"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      controls
-                    />
-                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
-                  </figure>
-                );
-              return null;
-            })();
-          })()}
+                  );
+                }
+                if (b.type === "placeholder") {
+                  const aspect =
+                    b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
+                  return (
+                    <figure key={i} className="space-y-4">
+                      <div
+                        className={`${aspect} flex w-full items-center justify-center rounded-lg border border-dashed border-border/70 bg-muted/30`}
+                      >
+                        <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                          {b.label}
+                        </span>
+                      </div>
+                      <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>
+                    </figure>
+                  );
+                }
+                if (b.type === "image") {
+                  return (
+                    <figure key={i} className="space-y-4">
+                      <img
+                        src={b.src}
+                        alt={b.alt}
+                        className="h-auto w-full rounded-md"
+                        loading="lazy"
+                      />
+                      {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                    </figure>
+                  );
+                }
+                if (b.type === "image-grid") {
+                  const cols = b.columns ?? 2;
+                  const colClass = cols === 4 ? "md:grid-cols-4" : cols === 3 ? "md:grid-cols-3" : "md:grid-cols-2";
+                  return (
+                    <figure key={i} className="space-y-4">
+                      <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
+                        {b.images.map((img, j) => (
+                          <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
+                        ))}
+                      </div>
+                      {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                    </figure>
+                  );
+                }
+                if (b.type === "video") {
+                  return (
+                    <figure key={i} className="space-y-4">
+                      <video
+                        src={b.src}
+                        poster={b.poster}
+                        className="h-auto w-full rounded-md"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        controls
+                      />
+                      {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                    </figure>
+                  );
+                }
+                return null;
+              });
+            })()}
           </div>
         </section>
       ) : parsed.sections.length > 0 ? (
