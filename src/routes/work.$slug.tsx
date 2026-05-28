@@ -157,13 +157,14 @@ function ProjectDetailPage() {
                 );
               }
               if (b.type === "image") {
-                const aspect =
-                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
                 return (
                   <figure key={i} className="space-y-4">
-                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
-                      <img src={b.src} alt={b.alt} className="h-full w-full object-cover" loading="lazy" />
-                    </div>
+                    <img
+                      src={b.src}
+                      alt={b.alt}
+                      className="h-auto w-full rounded-md"
+                      loading="lazy"
+                    />
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                   </figure>
                 );
@@ -175,9 +176,7 @@ function ProjectDetailPage() {
                   <figure key={i} className="space-y-4">
                     <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
                       {b.images.map((img, j) => (
-                        <div key={j} className="aspect-[4/3] overflow-hidden rounded-lg bg-muted/30">
-                          <img src={img.src} alt={img.alt} className="h-full w-full object-cover" loading="lazy" />
-                        </div>
+                        <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
                       ))}
                     </div>
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
@@ -185,22 +184,18 @@ function ProjectDetailPage() {
                 );
               }
               if (b.type === "video") {
-                const aspect =
-                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
                 return (
                   <figure key={i} className="space-y-4">
-                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
-                      <video
-                        src={b.src}
-                        poster={b.poster}
-                        className="h-full w-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        controls
-                      />
-                    </div>
+                    <video
+                      src={b.src}
+                      poster={b.poster}
+                      className="h-auto w-full rounded-md"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                    />
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                   </figure>
                 );
