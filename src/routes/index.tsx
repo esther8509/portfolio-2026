@@ -28,7 +28,7 @@ function Index() {
           </div>
           <div className="flex flex-col justify-end md:col-span-4">
             <p className="max-w-sm text-base leading-relaxed text-muted-foreground md:text-lg">
-              Developer Tooling, Enterprise
+              Wearables, VR / AR, Developer Tooling, Enterprise
             </p>
           </div>
         </div>
