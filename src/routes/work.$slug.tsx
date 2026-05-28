@@ -89,15 +89,15 @@ function ProjectDetailPage() {
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-3 gap-6 border-y border-border/60 py-6">
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Client</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Company</div>
             <div className="mt-2 text-base font-medium">{project.client}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Discipline</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Team</div>
             <div className="mt-2 text-base font-medium">{project.discipline}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Status</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Project</div>
             <div className="mt-2 text-base font-medium">
               {project.caseStudy || project.caseStudyBlocks ? "Case study" : "Coming soon"}
             </div>
