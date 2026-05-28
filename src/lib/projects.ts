@@ -16,6 +16,13 @@ import clockExploreSpec from "@/assets/clock-explore-spec.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 import clockExploreBoard from "@/assets/clock-explore-board.png";
+import nux01 from "@/assets/nux-01.png";
+import nux02 from "@/assets/nux-02.png";
+import nux03 from "@/assets/nux-03.png";
+import nux04 from "@/assets/nux-04.png";
+import nux05 from "@/assets/nux-05.png";
+import nux06 from "@/assets/nux-06.png";
+import nux07 from "@/assets/nux-07.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -350,10 +357,18 @@ export const projects: Project[] = [
           "The walkthrough covers three layers: Foundations — mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools — a guided tour of the core toolset and how to build within the editor. AI features — hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
       },
       {
-        type: "placeholder",
-        label: "NUX flow",
+        type: "image-grid",
+        columns: 2,
+        images: [
+          { src: nux01, alt: "NUX topic 1 — Scenes: kick off your scene" },
+          { src: nux02, alt: "NUX topic 2 — Navigation: rotate the camera view" },
+          { src: nux03, alt: "NUX topic 2 — Navigation: shift the camera view" },
+          { src: nux04, alt: "NUX topic 2 — Navigation: zoom in and out" },
+          { src: nux05, alt: "NUX topic 3 — Asset Library: explore props and effects" },
+          { src: nux06, alt: "NUX topic 3 — Asset Library: add an object" },
+          { src: nux07, alt: "NUX topic 3 — Asset Library: rotate an object" },
+        ],
         caption: "Foundations, editor tools, and AI features",
-        aspect: "wide",
       },
 
       {
