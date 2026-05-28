@@ -176,6 +176,7 @@ export const projects: Project[] = [
     ],
   },
   { slug: "world-desktop-editor", title: "World Desktop Editor", client: "Meta", year: "2024", discipline: "Spatial Tooling", image: work3, aspect: "wide", caseStudy: "World Desktop Editor (NUX)\n\nDesktop editor for building Meta Horizon Worlds experiences.\n\nScope: first world creation flow, tool walkthrough, tooltip design system.\n\nUsers: hobbyist creators and professional developers.\n\nZero to one, sole designer.\n\nAssets: Figma files coming later." },
+  { slug: "quest-for-business", title: "Quest for Business", client: "Horizon Managed Services", year: "2024", discipline: "Enterprise VR", image: work4, aspect: "tall", caseStudy: "Zero to one enterprise admin tool for managing fleets of Quest headsets at scale\n\nUsers: IT admins across varying enterprise types and sizes\n\nKey design challenge: configuring roles, permissions, and workflows across different IT admin contexts\n\nLead designer" },
 
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2024", discipline: "Product Design", image: work5, aspect: "square" },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2023", discipline: "Connected Product Design", image: work6, aspect: "square" },
