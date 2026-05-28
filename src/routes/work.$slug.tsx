@@ -115,8 +115,7 @@ function ProjectDetailPage() {
               return blocks.map((b, i) => {
                 if (b.type === "intro") return null;
                 const isFirstVisible = visibleIndex === 0;
-                const isVisible = b.type !== "intro";
-                if (isVisible) visibleIndex++;
+                visibleIndex++;
                 if (b.type === "part") {
                   return (
                     <div key={i} className={isFirstVisible ? "" : "border-t border-border/60 pt-12 md:pt-20"}>
