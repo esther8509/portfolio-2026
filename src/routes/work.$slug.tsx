@@ -184,6 +184,27 @@ function ProjectDetailPage() {
                   </figure>
                 );
               }
+              if (b.type === "video") {
+                const aspect =
+                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
+                return (
+                  <figure key={i} className="space-y-4">
+                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
+                      <video
+                        src={b.src}
+                        poster={b.poster}
+                        className="h-full w-full object-cover"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        controls
+                      />
+                    </div>
+                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                  </figure>
+                );
+              }
               return null;
             })}
           </div>

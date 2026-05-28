@@ -24,7 +24,8 @@ export type CaseStudyBlock =
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
-  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 };
+  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
+  | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
 
 export type Project = {
   slug: string;
@@ -164,9 +165,9 @@ export const projects: Project[] = [
           "Release notes for the update received praise from users, who noticed and appreciated the improvement over what came before.",
       },
       {
-        type: "placeholder",
-        label: "Files app",
-        caption: "Multi-select, drag and drop, third-party app interaction",
+        type: "video",
+        src: "/files-drag-drop.mov",
+        caption: "Multi-select and drag and drop in action — files dragged from VR directly into a third-party app, a first for Meta Quest.",
         aspect: "wide",
       },
 
