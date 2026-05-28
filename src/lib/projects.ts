@@ -192,12 +192,6 @@ export const projects: Project[] = [
         body:
           "All three apps ship as default OS-level experiences on Meta Quest. Files received user praise on release notes for the improvements over the previous experience. Clock and Calendar represent new ground for the platform — utility done natively and thoughtfully, setting a bar that competitors haven't yet matched.",
       },
-      {
-        type: "placeholder",
-        label: "Outcome metric",
-        caption: "Specific metrics or user feedback — to be added when available",
-        aspect: "wide",
-      },
     ],
   },
   {
