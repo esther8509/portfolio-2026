@@ -156,6 +156,34 @@ function ProjectDetailPage() {
                   </figure>
                 );
               }
+              if (b.type === "image") {
+                const aspect =
+                  b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
+                return (
+                  <figure key={i} className="space-y-4">
+                    <div className={`${aspect} overflow-hidden rounded-lg bg-muted/30`}>
+                      <img src={b.src} alt={b.alt} className="h-full w-full object-cover" loading="lazy" />
+                    </div>
+                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                  </figure>
+                );
+              }
+              if (b.type === "image-grid") {
+                const cols = b.columns ?? 2;
+                const colClass = cols === 4 ? "md:grid-cols-4" : cols === 3 ? "md:grid-cols-3" : "md:grid-cols-2";
+                return (
+                  <figure key={i} className="space-y-4">
+                    <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
+                      {b.images.map((img, j) => (
+                        <div key={j} className="aspect-[4/3] overflow-hidden rounded-lg bg-muted/30">
+                          <img src={img.src} alt={img.alt} className="h-full w-full object-cover" loading="lazy" />
+                        </div>
+                      ))}
+                    </div>
+                    {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                  </figure>
+                );
+              }
               return null;
             })}
           </div>
