@@ -30,6 +30,7 @@ import nux11 from "@/assets/nux-11.png";
 import nux12 from "@/assets/nux-12.png";
 import nux13 from "@/assets/nux-13.png";
 import horizonCreator from "@/assets/horizon-creator.png";
+import videoLibrary from "@/assets/video-library.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -403,8 +404,9 @@ export const projects: Project[] = [
         aspect: "wide",
       },
       {
-        type: "placeholder",
-        label: "Onboarding video series",
+        type: "image",
+        src: videoLibrary,
+        alt: "Worlds Creator Academy video library",
         caption: "8 onboarding videos supporting creators beyond the in-editor experience",
         aspect: "wide",
       },
