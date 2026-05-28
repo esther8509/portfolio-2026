@@ -9,6 +9,7 @@ import clockDigital from "@/assets/clock-digital.jpeg";
 import clockAnalog from "@/assets/clock-analog.jpeg";
 import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
+import clockMidfi from "@/assets/clock-midfi.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
