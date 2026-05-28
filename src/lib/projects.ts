@@ -5,13 +5,19 @@ import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.jpg";
 import work6 from "@/assets/work-6.jpg";
 import work7 from "@/assets/work-7.jpg";
+import clockDigital from "@/assets/clock-digital.jpeg";
+import clockAnalog from "@/assets/clock-analog.jpeg";
+import clockAlarm from "@/assets/clock-alarm.jpeg";
+import clockTimer from "@/assets/clock-timer.jpeg";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
   | { type: "part"; eyebrow: string; title: string; subtitle?: string }
   | { type: "section"; heading: string; body: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
-  | { type: "placeholder-group"; title: string; items: string[] };
+  | { type: "placeholder-group"; title: string; items: string[] }
+  | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
+  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 };
 
 export type Project = {
   slug: string;
@@ -66,10 +72,15 @@ export const projects: Project[] = [
           "The app was built for gaming and productivity use cases — the kind of lightweight utility you reach for mid-session. It has three tabs: Clock, Alarm, and Timer. Simple, focused, and designed to feel native to the platform in a way competitors haven't managed. This was the first real proof of a new way of working. The full process story lives in the AI-native section.",
       },
       {
-        type: "placeholder",
-        label: "Clock app",
-        caption: "Clock, Alarm, and Timer tabs",
-        aspect: "wide",
+        type: "image-grid",
+        columns: 2,
+        images: [
+          { src: clockDigital, alt: "Clock tab — digital mode showing 5:56:30 AM, Sunday March 8, 2026, floating in a Horizon Worlds environment" },
+          { src: clockAnalog, alt: "Clock tab — analog face with violet hour, minute, and second hands floating in a Horizon Worlds environment" },
+          { src: clockAlarm, alt: "Alarm tab — New Alarm modal with hour and minute inputs and inline validation" },
+          { src: clockTimer, alt: "Timer — Time's Up dialog with alarm icon and Dismiss button, shown in a virtual living room" },
+        ],
+        caption: "Early builds pushed straight onto the headset — Clock, Alarm, and Timer tabs iterated live in-VR.",
       },
 
       {
