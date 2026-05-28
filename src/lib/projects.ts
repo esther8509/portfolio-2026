@@ -5,6 +5,10 @@ import work4 from "@/assets/work-4.jpg";
 import work5 from "@/assets/work-5.jpg";
 import work6 from "@/assets/work-6.jpg";
 import work7 from "@/assets/work-7.jpg";
+import clockDigital from "@/assets/clock-digital.jpeg";
+import clockAnalog from "@/assets/clock-analog.jpeg";
+import clockAlarm from "@/assets/clock-alarm.jpeg";
+import clockTimer from "@/assets/clock-timer.jpeg";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
