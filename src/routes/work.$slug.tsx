@@ -77,7 +77,8 @@ function ProjectDetailPage() {
               {project.title}
             </h1>
             {introText && (
-              <p className="mt-8 max-w-3xl text-display text-2xl font-medium leading-[1.2] tracking-tight text-muted-foreground md:text-3xl">
+              <p className="mt-8 max-w-2xl text-display text-lg font-medium leading-[1.35] tracking-tight text-muted-foreground md:text-xl">
+
                 {introText}
               </p>
             )}
