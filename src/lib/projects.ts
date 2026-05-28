@@ -19,7 +19,7 @@ import clockExploreBoard from "@/assets/clock-explore-board.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
-  | { type: "part"; eyebrow: string; title: string; subtitle?: string }
+  | { type: "part"; eyebrow?: string; title: string; subtitle?: string }
   | { type: "section"; heading: string; body: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
