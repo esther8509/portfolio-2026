@@ -11,6 +11,11 @@ import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
+import clockExploreAlarmVr from "@/assets/clock-explore-alarm-vr.png";
+import clockExploreSpec from "@/assets/clock-explore-spec.png";
+import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
+import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
+import clockExploreBoard from "@/assets/clock-explore-board.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
