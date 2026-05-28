@@ -114,9 +114,11 @@ function ProjectDetailPage() {
               if (b.type === "part") {
                 return (
                   <div key={i} className="border-t border-border/60 pt-12 md:pt-20">
-                    <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                      {b.eyebrow}
-                    </div>
+                    {b.eyebrow && (
+                      <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                        {b.eyebrow}
+                      </div>
+                    )}
                     <h2 className="mt-4 text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
                       {b.title}
                     </h2>
