@@ -274,7 +274,85 @@ export const projects: Project[] = [
       },
     ],
   },
-  { slug: "world-desktop-editor", title: "World Desktop Editor", client: "Meta", year: "2024", discipline: "Spatial Tooling", image: work3, aspect: "wide", caseStudy: "World Desktop Editor (NUX)\n\nDesktop editor for building Meta Horizon Worlds experiences.\n\nScope: first world creation flow, tool walkthrough, tooltip design system.\n\nUsers: hobbyist creators and professional developers.\n\nZero to one, sole designer.\n\nAssets: Figma files coming later." },
+  {
+    slug: "world-desktop-editor",
+    title: "World Desktop Editor",
+    client: "Meta",
+    year: "2024",
+    discipline: "Spatial Tooling",
+    image: work3,
+    aspect: "wide",
+    caseStudyBlocks: [
+      {
+        type: "intro",
+        body:
+          "Horizon Worlds Editor is Meta's own game engine built specifically for creating Horizon Worlds experiences, similar to Unity but native to Meta's ecosystem. When the editor launched, there was nothing to help new users get started. No onboarding, no guidance, no education layer of any kind. For a tool this complex, that was a real barrier especially for the hobbyist creators who made up the primary audience. I was the sole product designer leading the education piece across the editor. This case study focuses on the centerpiece of that work: the NUX, a zero to one interactive walkthrough that shipped to 100% of users.",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 1",
+        title: "The NUX",
+        subtitle: "Zero to one interactive walkthrough",
+      },
+      {
+        type: "section",
+        heading: "The challenge",
+        body:
+          "The core tension in designing the NUX was keeping it short enough to not lose people while making it substantive enough to actually matter. Most tutorials teach and then leave. We wanted users to finish the NUX feeling like they had made something real, not just completed a checklist. To solve this, I collaborated with a game designer to build the walkthrough as an actual game tutorial, one that ends with the user having created their own world. By the time someone finishes the NUX, they're not starting from zero. They already have something.",
+      },
+      {
+        type: "section",
+        heading: "The design",
+        body:
+          "The walkthrough covers three layers: Foundations — mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools — a guided tour of the core toolset and how to build within the editor. AI features — hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
+      },
+      {
+        type: "placeholder",
+        label: "NUX flow",
+        caption: "Foundations, editor tools, and AI features",
+        aspect: "wide",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 2",
+        title: "Supporting education layer",
+        subtitle: "Creator website and onboarding videos",
+      },
+      {
+        type: "section",
+        heading: "Supporting education layer",
+        body:
+          "The NUX was one part of a broader education system I helped build. A dedicated Horizon creator website provided additional guidance and resources, and I collaborated on 8 onboarding videos to support creators beyond the in-editor experience.",
+      },
+      {
+        type: "placeholder",
+        label: "Horizon creator website",
+        caption: "Additional guidance and resources for creators",
+        aspect: "wide",
+      },
+      {
+        type: "placeholder",
+        label: "Onboarding video series",
+        caption: "8 onboarding videos supporting creators beyond the in-editor experience",
+        aspect: "wide",
+      },
+
+      {
+        type: "section",
+        heading: "Outcome",
+        body:
+          "The NUX shipped to 100% of users, a significant milestone for a zero to one feature. By ending with a real world created by the user, the tutorial set a new bar for how the editor onboards creators.",
+      },
+      {
+        type: "placeholder",
+        label: "Outcome metric",
+        caption: "Specific metrics or user feedback — to be added when available",
+        aspect: "wide",
+      },
+    ],
+  },
   { slug: "quest-for-business", title: "Quest for Business", client: "Horizon Managed Services", year: "2024", discipline: "Enterprise VR", image: work4, aspect: "tall", caseStudy: "Zero to one enterprise admin tool for managing fleets of Quest headsets at scale\n\nUsers: IT admins across varying enterprise types and sizes\n\nKey design challenge: configuring roles, permissions, and workflows across different IT admin contexts\n\nLead designer" },
 
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2024", discipline: "Product Design", image: work5, aspect: "square" },
