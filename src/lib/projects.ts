@@ -165,9 +165,9 @@ export const projects: Project[] = [
           "Release notes for the update received praise from users, who noticed and appreciated the improvement over what came before.",
       },
       {
-        type: "placeholder",
-        label: "Files app",
-        caption: "Multi-select, drag and drop, third-party app interaction",
+        type: "video",
+        src: "/files-drag-drop.mov",
+        caption: "Multi-select and drag and drop in action — files dragged from VR directly into a third-party app, a first for Meta Quest.",
         aspect: "wide",
       },
 
