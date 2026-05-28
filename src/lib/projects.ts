@@ -27,6 +27,17 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "meta-wearables",
+    title: "VR System Apps",
+    client: "Meta Reality Labs",
+    year: "2025",
+    discipline: "Wearables",
+    image: work1,
+    aspect: "square",
+    caseStudy:
+      "Default OS-level apps shipping with Meta Quest (and future unreleased glasses)\n\nClock: zero to one. Files + calendar: iterative\n\nSole designer across all three\n\nDesigned for VR + future glasses form factor\n\nClock app is the anchor story for the AI-native section (cross-referenced, not repeated)",
+  },
+  {
     slug: "developer-tools",
     title: "Developer Platforms",
     client: "Meta",
