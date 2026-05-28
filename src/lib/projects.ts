@@ -29,6 +29,7 @@ import nux10 from "@/assets/nux-10.png";
 import nux11 from "@/assets/nux-11.png";
 import nux12 from "@/assets/nux-12.png";
 import nux13 from "@/assets/nux-13.png";
+import horizonCreator from "@/assets/horizon-creator.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -395,8 +396,9 @@ export const projects: Project[] = [
           "The NUX was one part of a broader education system I helped build. A dedicated Horizon creator website provided additional guidance and resources, and I collaborated on 8 onboarding videos to support creators beyond the in-editor experience.",
       },
       {
-        type: "placeholder",
-        label: "Horizon creator website",
+        type: "image",
+        src: horizonCreator,
+        alt: "Horizon creator website",
         caption: "Additional guidance and resources for creators",
         aspect: "wide",
       },
