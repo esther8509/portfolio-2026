@@ -91,6 +91,13 @@ export const projects: Project[] = [
         caption: "Mid-fidelity exploration — refining the face, tab system, and hierarchy before the final shipped design.",
         aspect: "wide",
       },
+      {
+        type: "image",
+        src: clockHifi,
+        alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
+        caption: "Latest high-fidelity exploration (in progress) — built on the unreleased AI glasses design system, leaning into liquid glass and translucent augments instead of hard color blocks.",
+        aspect: "wide",
+      },
 
       {
         type: "part",
