@@ -63,7 +63,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 1",
         title: "Clock",
         subtitle: "Zero to one — shipped via AI-native workflow",
       },
@@ -148,7 +147,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 2",
         title: "Files",
         subtitle: "Iterative — platform capability unlock",
       },
@@ -173,7 +171,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 3",
         title: "Calendar",
         subtitle: "Shipped with Meta Quest v71 — Horizon OS redesign",
       },
@@ -233,7 +230,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 1",
         title: "Developer Center",
         subtitle: "developers.meta.com/horizon",
       },
@@ -288,7 +284,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 2",
         title: "Feedback Hub",
         subtitle: "Tab within Meta Quest Developer Hub (MQDH)",
       },
@@ -365,7 +360,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 1",
         title: "The NUX",
         subtitle: "Zero to one interactive walkthrough",
       },
@@ -390,7 +384,6 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 2",
         title: "Supporting education layer",
         subtitle: "Creator website and onboarding videos",
       },
@@ -444,7 +437,7 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 1",
+        
         title: "The core design problem",
         subtitle: "Presets across SMB, mid-market, and enterprise",
       },
@@ -463,7 +456,7 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 2",
+        
         title: "Conflict resolution",
         subtitle: "Contextual blocking modals and warnings",
       },
@@ -482,7 +475,7 @@ export const projects: Project[] = [
 
       {
         type: "part",
-        eyebrow: "Part 3",
+        
         title: "Features",
         subtitle: "Core surfaces across the admin experience",
       },
