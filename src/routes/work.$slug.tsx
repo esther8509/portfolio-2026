@@ -110,24 +110,30 @@ function ProjectDetailPage() {
       {blocks ? (
         <section className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-32">
           <div className="space-y-16 md:space-y-24">
-            {blocks.map((b, i) => {
-              if (b.type === "intro") return null;
-              if (b.type === "part") {
-                return (
-                  <div key={i} className="border-t border-border/60 pt-12 md:pt-20">
-                    {b.eyebrow && (
-                      <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                        {b.eyebrow}
-                      </div>
-                    )}
-                    <h2 className="mt-4 text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
-                      {b.title}
-                    </h2>
-                    {b.subtitle && (
-                      <div className="mt-3 font-mono text-sm text-muted-foreground">{b.subtitle}</div>
-                    )}
-                  </div>
-                );
+            {(() => {
+              let visibleIndex = 0;
+              return blocks.map((b, i) => {
+                if (b.type === "intro") return null;
+                const isFirstVisible = visibleIndex === 0;
+                if (b.type === "part" || b.type === "section" || b.type === "placeholder" || b.type === "image" || b.type === "image-grid" || b.type === "video") {
+                  visibleIndex++;
+                }
+                if (b.type === "part") {
+                  return (
+                    <div key={i} className={isFirstVisible ? "pt-0" : "border-t border-border/60 pt-12 md:pt-20"}>
+                      {b.eyebrow && (
+                        <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
+                          {b.eyebrow}
+                        </div>
+                      )}
+                      <h2 className="mt-4 text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
+                        {b.title}
+                      </h2>
+                      {b.subtitle && (
+                        <div className="mt-3 font-mono text-sm text-muted-foreground">{b.subtitle}</div>
+                      )}
+                    </div>
+                  );
               }
               if (b.type === "section") {
                 return (
