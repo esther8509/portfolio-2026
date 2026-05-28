@@ -1,6 +1,6 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
-import { projects } from "@/lib/projects";
+import { projects, type CaseStudyBlock } from "@/lib/projects";
 
 export const Route = createFileRoute("/work/$slug")({
   head: ({ params }) => {
