@@ -410,7 +410,6 @@ export const projects: Project[] = [
         caption: "8 onboarding videos supporting creators beyond the in-editor experience",
         aspect: "wide",
       },
-      },
 
       {
         type: "section",
