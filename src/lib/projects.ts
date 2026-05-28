@@ -11,6 +11,11 @@ import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
+import clockExploreAlarmVr from "@/assets/clock-explore-alarm-vr.png";
+import clockExploreSpec from "@/assets/clock-explore-spec.png";
+import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
+import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
+import clockExploreBoard from "@/assets/clock-explore-board.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -96,6 +101,47 @@ export const projects: Project[] = [
         src: clockHifi,
         alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
         caption: "Latest high-fidelity exploration (in progress) — built on the unreleased AI glasses design system, leaning into liquid glass and translucent augments instead of hard color blocks.",
+        aspect: "wide",
+      },
+      {
+        type: "section",
+        heading: "Explorations",
+        body:
+          "Process artifacts from the design phase — surface composition, alert patterns, face shape, and the spec sheet that drove engineering handoff. Many of these states made it into the shipped app; others informed the direction without surviving final cut.",
+      },
+      {
+        type: "image",
+        src: clockExploreAlarmVr,
+        alt: "Alarm list explored in-room — surface floats in a modern living room with toggles, delete affordances, and metadata tags like Gentle, Urgent, and Silent",
+        caption: "Alarm list explored in-room — testing density, toggle ergonomics, and a metadata tag system (Gentle, Urgent, Silent) for at-a-glance triage.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockExploreSpec,
+        alt: "Spec sheet showing every Clock state side-by-side — digital and analog clock views, alarm list and empty state, timer running view, and alarm/timer alert dialogs",
+        caption: "Full state spec — every Clock, Alarm, and Timer surface laid out side-by-side for review and engineering handoff.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockExploreAlerts,
+        alt: "Alert pattern exploration — Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
+        caption: "Alert pattern study — weighing a focused modal dialog against a less interruptive toast for alarm and timer notifications.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockExploreFaceShape,
+        alt: "Two analog clock face explorations side-by-side — a perfect circle on the left and a rounded square on the right",
+        caption: "Face shape exploration — circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockExploreBoard,
+        alt: "Internal task board view organizing alarm states — empty state, list view, add/error/edit dialogs, and time's up notification — each linked to a task ticket marked ready for shipping",
+        caption: "Shipping board — each state tracked as its own ticket, scoped tightly so engineering could land them independently.",
         aspect: "wide",
       },
 
