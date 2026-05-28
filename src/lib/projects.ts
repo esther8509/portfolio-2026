@@ -83,6 +83,13 @@ export const projects: Project[] = [
         ],
         caption: "Early builds pushed straight onto the headset — Clock, Alarm, and Timer tabs iterated live in-VR.",
       },
+      {
+        type: "image",
+        src: clockMidfi,
+        alt: "Mid-fidelity Clock design — light analog face with numerals at 12, 3, 6, 9 inside a dark rounded surface, with Clock, Alarms, and Timers tabs",
+        caption: "Mid-fidelity exploration — refining the face, tab system, and hierarchy before the final shipped design.",
+        aspect: "wide",
+      },
 
       {
         type: "part",
