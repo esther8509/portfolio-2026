@@ -34,8 +34,107 @@ export const projects: Project[] = [
     discipline: "Wearables",
     image: work1,
     aspect: "square",
-    caseStudy:
-      "Default OS-level apps shipping with Meta Quest (and future unreleased glasses)\n\nClock: zero to one. Files + calendar: iterative\n\nSole designer across all three\n\nDesigned for VR + future glasses form factor\n\nClock app is the anchor story for the AI-native section (cross-referenced, not repeated)",
+    caseStudyBlocks: [
+      {
+        type: "intro",
+        body:
+          "Every operating system needs a foundation. For Meta Quest, that foundation was missing. While competitors like Apple Vision Pro had utility apps, none had done them particularly well — treating them as afterthoughts rather than native, purposeful experiences. Our team saw the gap and decided to close it, starting with the apps users were already searching for.",
+      },
+      {
+        type: "section",
+        heading: "The mandate",
+        body:
+          "I was the sole designer across three default OS-level apps shipping with Meta Quest and future unreleased devices: Clock, Files, and Calendar. Each app had a different starting point. Clock was zero to one, while Files and Calendar were iterative improvements on what existed before. All three were designed for VR and built with future form factors in mind.",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 1",
+        title: "Clock",
+        subtitle: "Zero to one — shipped via AI-native workflow",
+      },
+      {
+        type: "section",
+        heading: "Overview",
+        body:
+          "A clear data signal started this one. Quest users were frequently searching for a clock app that didn't exist. That user need, combined with a team-wide push to experiment with AI-native building, created an unusual opportunity: I took Clock from ideation all the way to pushing code live onto the headset without any engineering intervention.",
+      },
+      {
+        type: "section",
+        heading: "The app",
+        body:
+          "The app was built for gaming and productivity use cases — the kind of lightweight utility you reach for mid-session. It has three tabs: Clock, Alarm, and Timer. Simple, focused, and designed to feel native to the platform in a way competitors haven't managed. This was the first real proof of a new way of working. The full process story lives in the AI-native section.",
+      },
+      {
+        type: "placeholder",
+        label: "Clock app",
+        caption: "Clock, Alarm, and Timer tabs",
+        aspect: "wide",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 2",
+        title: "Files",
+        subtitle: "Iterative — platform capability unlock",
+      },
+      {
+        type: "section",
+        heading: "Overview",
+        body:
+          "The Files app already existed, but the experience needed meaningful improvement. The headline feature I designed was multi-select and drag and drop — and more importantly, the ability to drag files from VR directly into third-party apps like WhatsApp. That was a first for Meta Quest, and a real platform capability unlock, not just a UI improvement.",
+      },
+      {
+        type: "section",
+        heading: "Reception",
+        body:
+          "Release notes for the update received praise from users, who noticed and appreciated the improvement over what came before.",
+      },
+      {
+        type: "placeholder",
+        label: "Files app",
+        caption: "Multi-select, drag and drop, third-party app interaction",
+        aspect: "wide",
+      },
+
+      {
+        type: "part",
+        eyebrow: "Part 3",
+        title: "Calendar",
+        subtitle: "Shipped with Meta Quest v71 — Horizon OS redesign",
+      },
+      {
+        type: "section",
+        heading: "Overview",
+        body:
+          "Calendar shipped as part of the Meta Quest v71 update alongside a broader Horizon OS redesign. The feature I want to highlight here is a niche but technically interesting design problem: gaze targeting for a new wearable device that uses eye tracking to select UI elements.",
+      },
+      {
+        type: "section",
+        heading: "The design challenge",
+        body:
+          "The challenge was precision — specifically, what happens when multiple events overlap in the same time slot? How does the user select the right one with just their eyes? I worked closely with engineering to solve this, ultimately designing a flyout that expands beyond the initial calendar real estate when multiple events compete for the same gaze target. It gave users a clear, precise way to select exactly what they meant.",
+      },
+      {
+        type: "placeholder",
+        label: "Calendar app",
+        caption: "Standard view and gaze target flyout for overlapping events",
+        aspect: "wide",
+      },
+
+      {
+        type: "section",
+        heading: "Outcome",
+        body:
+          "All three apps ship as default OS-level experiences on Meta Quest. Files received user praise on release notes for the improvements over the previous experience. Clock and Calendar represent new ground for the platform — utility done natively and thoughtfully, setting a bar that competitors haven't yet matched.",
+      },
+      {
+        type: "placeholder",
+        label: "Outcome metric",
+        caption: "Specific metrics or user feedback — to be added when available",
+        aspect: "wide",
+      },
+    ],
   },
   {
     slug: "developer-tools",
