@@ -23,6 +23,12 @@ import nux04 from "@/assets/nux-04.png";
 import nux05 from "@/assets/nux-05.png";
 import nux06 from "@/assets/nux-06.png";
 import nux07 from "@/assets/nux-07.png";
+import nux08 from "@/assets/nux-08.png";
+import nux09 from "@/assets/nux-09.png";
+import nux10 from "@/assets/nux-10.png";
+import nux11 from "@/assets/nux-11.png";
+import nux12 from "@/assets/nux-12.png";
+import nux13 from "@/assets/nux-13.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -367,6 +373,12 @@ export const projects: Project[] = [
           { src: nux05, alt: "NUX topic 3 — Asset Library: explore props and effects" },
           { src: nux06, alt: "NUX topic 3 — Asset Library: add an object" },
           { src: nux07, alt: "NUX topic 3 — Asset Library: rotate an object" },
+          { src: nux13, alt: "NUX topic 3 — Asset Library: move an object" },
+          { src: nux12, alt: "NUX topic 4 — Playtest: test your scene" },
+          { src: nux11, alt: "NUX topic 4 — Playtest: exit test mode" },
+          { src: nux10, alt: "NUX topic 5 — Properties: adjust player gravity" },
+          { src: nux09, alt: "NUX topic 6 — Generative AI: explore smart tools" },
+          { src: nux08, alt: "NUX completion — you've built a world" },
         ],
         caption: "Foundations, editor tools, and AI features",
       },
