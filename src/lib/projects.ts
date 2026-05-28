@@ -11,7 +11,9 @@ export type CaseStudyBlock =
   | { type: "part"; eyebrow: string; title: string; subtitle?: string }
   | { type: "section"; heading: string; body: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
-  | { type: "placeholder-group"; title: string; items: string[] };
+  | { type: "placeholder-group"; title: string; items: string[] }
+  | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
+  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 };
 
 export type Project = {
   slug: string;
