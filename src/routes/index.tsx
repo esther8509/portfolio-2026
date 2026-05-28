@@ -31,8 +31,8 @@ function Index() {
 
 
       {/* Selected Work — hero + grid */}
-      <section className="mx-auto max-w-[1100px] px-6 pt-24 md:px-10 md:pt-32">
-        <div className="grid grid-cols-1 gap-x-6 gap-y-16 md:grid-cols-3">
+      <section className="mx-auto max-w-[1400px] px-6 pt-4 md:px-10 md:pt-8">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-20 md:grid-cols-3">
           {featured.map((p) => (
             <Link to="/work/$slug" params={{ slug: p.slug }} key={p.slug} className="group">
               <div className="overflow-hidden rounded-sm bg-muted">
@@ -54,6 +54,7 @@ function Index() {
           ))}
         </div>
       </section>
+
 
       <SiteFooter />
     </div>
