@@ -79,6 +79,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:description", content: "Selected works, writing, and experiments by Esther Nam." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "Esther Nam — Portfolio" },
+      { name: "twitter:description", content: "Selected works, writing, and experiments by Esther Nam." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b298f36d-09cc-4669-a7da-75490f978976/id-preview-a65294e2--0a04c252-9dbf-49c7-8340-1380a6c5c2fb.lovable.app-1779951901800.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b298f36d-09cc-4669-a7da-75490f978976/id-preview-a65294e2--0a04c252-9dbf-49c7-8340-1380a6c5c2fb.lovable.app-1779951901800.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
