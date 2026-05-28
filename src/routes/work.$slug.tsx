@@ -208,9 +208,9 @@ function ProjectDetailPage() {
                     {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                   </figure>
                 );
-              }
               return null;
-            })}
+            })();
+          })()}
           </div>
         </section>
       ) : parsed.sections.length > 0 ? (
