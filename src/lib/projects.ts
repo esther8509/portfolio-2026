@@ -402,6 +402,7 @@ export const projects: Project[] = [
         alt: "Horizon creator website",
         caption: "Additional guidance and resources for creators",
         aspect: "wide",
+      },
       {
         type: "image",
         src: videoLibrary,
