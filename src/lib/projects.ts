@@ -9,6 +9,7 @@ import clockDigital from "@/assets/clock-digital.jpeg";
 import clockAnalog from "@/assets/clock-analog.jpeg";
 import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
+import clockMidfi from "@/assets/clock-midfi.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -81,6 +82,13 @@ export const projects: Project[] = [
           { src: clockTimer, alt: "Timer — Time's Up dialog with alarm icon and Dismiss button, shown in a virtual living room" },
         ],
         caption: "Early builds pushed straight onto the headset — Clock, Alarm, and Timer tabs iterated live in-VR.",
+      },
+      {
+        type: "image",
+        src: clockMidfi,
+        alt: "Mid-fidelity Clock design — light analog face with numerals at 12, 3, 6, 9 inside a dark rounded surface, with Clock, Alarms, and Timers tabs",
+        caption: "Mid-fidelity exploration — refining the face, tab system, and hierarchy before the final shipped design.",
+        aspect: "wide",
       },
 
       {
