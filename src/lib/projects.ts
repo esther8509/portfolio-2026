@@ -569,7 +569,22 @@ export const projects: Project[] = [
       },
     ],
   },
-  { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2021", discipline: "Product Design", image: work5, aspect: "square" },
+  {
+    slug: "alaska-airlines",
+    title: "Alaska Airlines",
+    client: "Alaska Airlines",
+    year: "2021",
+    discipline: "Product Design",
+    image: work5,
+    aspect: "square",
+    caseStudyBlocks: [
+      {
+        type: "video",
+        src: "/videos/alaska-airlines-e2e.mp4",
+        caption: "End-to-end booking flow: searching for a location, picking dates, and running a search.",
+      },
+    ],
+  },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2020", discipline: "Connected Product Design", image: work6, aspect: "square" },
 ];
 
