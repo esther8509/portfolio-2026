@@ -47,7 +47,7 @@ function AboutPage() {
                 I like designing foundational things: tools, systems, operating system experiences, and products that are still figuring out what they want to be. Recently that's evolved into building AI-native workflows where design and implementation happen almost at the same time. My background is in hardware, which taught me that the best systems usually disappear into the background.
               </p>
               <p>
-                Outside work: I play melodica and busk at the park. I also collect plushies with a level of commitment that occasionally surprises me. The photo is not an accident.
+                Outside of work, I play melodica and like to go busking at local parks. I also collect plushies with high level of commitment.
               </p>
             </div>
           </div>
