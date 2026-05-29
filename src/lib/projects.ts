@@ -162,6 +162,13 @@ export const projects: Project[] = [
         body:
           "The challenge was precision: specifically, what happens when multiple events overlap in the same time slot? How does the user select the right one with just their eyes? I worked closely with engineering to solve this, ultimately designing a flyout that expands beyond the initial calendar real estate when multiple events compete for the same gaze target. It gave users a clear, precise way to select exactly what they meant.",
       },
+      {
+        type: "video",
+        src: "/videos/calendar.mp4",
+        caption: "Gaze-targeted flyout expanding to disambiguate overlapping events.",
+      },
+
+
 
       {
         type: "section",
