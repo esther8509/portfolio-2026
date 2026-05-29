@@ -12,6 +12,7 @@ import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 import oculusDeveloper from "@/assets/oculus-developer.png";
 import mhcpDiscord from "@/assets/mhcp-discord.png";
+import metaBuildPaths from "@/assets/meta-build-paths.png";
 
 
 import nux01 from "@/assets/nux-01.png";
@@ -253,10 +254,12 @@ export const projects: Project[] = [
           "Developer platform engagement increased. App submissions grew significantly over the years following the redesign, and adoption of Meta-specific SDKs rose — a direct signal that developers were not only finding the platform but building deeper within it.",
       },
       {
-        type: "placeholder",
-        label: "Build paths",
-        caption: "Documentation page showing the full build path structure — Unity, Unreal, Horizon Worlds side by side",
-        aspect: "wide",
+        type: "image",
+        src: metaBuildPaths,
+        alt: "Meta Horizon developer center showing the Unity build path documentation",
+        caption: "Documentation page showing the full build path structure — Unity, Unreal, Horizon Worlds side by side.",
+        natural: true,
+
       },
 
       {
