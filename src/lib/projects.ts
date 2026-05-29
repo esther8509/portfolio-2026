@@ -15,7 +15,8 @@ import clockExploreAlarmVr from "@/assets/clock-explore-alarm-vr.png";
 import clockExploreSpec from "@/assets/clock-explore-spec.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
-import clockExploreBoard from "@/assets/clock-explore-board.png";
+
+
 import nux01 from "@/assets/nux-01.png";
 import nux02 from "@/assets/nux-02.png";
 import nux03 from "@/assets/nux-03.png";
@@ -128,13 +129,7 @@ export const projects: Project[] = [
         caption: "Face shape exploration — circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
         aspect: "wide",
       },
-      {
-        type: "image",
-        src: clockExploreBoard,
-        alt: "Internal task board view organizing alarm states — empty state, list view, add/error/edit dialogs, and time's up notification — each linked to a task ticket marked ready for shipping",
-        caption: "Shipping board — each state tracked as its own ticket, scoped tightly so engineering could land them independently.",
-        aspect: "wide",
-      },
+
 
       {
         type: "part",
