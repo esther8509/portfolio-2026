@@ -144,7 +144,7 @@ export const projects: Project[] = [
       {
         type: "part",
         title: "Calendar",
-        subtitle: "Shipped with Meta Quest v71 — Horizon OS redesign",
+        subtitle: "Shipped with Meta Quest v71, Horizon OS redesign",
       },
       {
         type: "section",
