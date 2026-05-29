@@ -91,7 +91,7 @@ export const projects: Project[] = [
         type: "image",
         src: clockHifi,
         alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
-        caption: "Latest high-fidelity exploration (in progress) — built on the unreleased AI glasses design system, leaning into liquid glass and translucent augments instead of hard color blocks.",
+        caption: "Latest high-fidelity exploration (in progress), and one of the showcase apps for the unreleased AI glasses design system. Leaning into translucent, glass-like augments and depth instead of hard color blocks.",
         aspect: "wide",
       },
       {
