@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+import portrait from "@/assets/esther-portrait.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
