@@ -1,6 +1,7 @@
-import { createFileRoute, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
 import { projects, type CaseStudyBlock } from "@/lib/projects";
+
 
 export const Route = createFileRoute("/work/$slug")({
   head: ({ params }) => {
@@ -76,15 +77,18 @@ function ProjectDetailPage() {
             <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
               {project.title}
             </h1>
+            {project.subtitle && (
+              <div className="mt-4 font-mono text-sm text-muted-foreground">{project.subtitle}</div>
+            )}
             {introText && (
               <p className="mt-8 max-w-2xl text-display text-lg font-medium leading-[1.35] tracking-tight text-muted-foreground md:text-xl">
-
                 {introText}
               </p>
             )}
           </div>
         </div>
       </section>
+
 
       {/* Meta strip */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
@@ -142,11 +146,38 @@ function ProjectDetailPage() {
                         </h3>
                       </div>
                       <div className="md:col-span-7 md:col-start-6">
-                        <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">{b.body}</p>
+                        <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">
+                          {b.body}
+                          {b.link && (
+                            <>
+                              {" "}
+                              <Link to={b.link.to} className="underline underline-offset-4 hover:text-foreground">
+                                {b.link.text}
+                              </Link>
+                            </>
+                          )}
+                        </p>
                       </div>
                     </div>
                   );
                 }
+                if (b.type === "quote") {
+                  return (
+                    <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
+                      <div className="md:col-span-7 md:col-start-6">
+                        <blockquote className="border-l-2 border-border pl-6">
+                          <p className="text-display text-xl font-medium leading-[1.3] tracking-tight text-foreground md:text-2xl">
+                            {b.body}
+                          </p>
+                          {b.attribution && (
+                            <footer className="mt-4 font-mono text-sm text-muted-foreground">— {b.attribution}</footer>
+                          )}
+                        </blockquote>
+                      </div>
+                    </div>
+                  );
+                }
+
                 if (b.type === "callout") {
                   return (
                     <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">

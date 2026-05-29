@@ -30,8 +30,9 @@ import videoLibrary from "@/assets/video-library.png";
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
   | { type: "part"; eyebrow?: string; title: string; subtitle?: string }
-  | { type: "section"; heading: string; body: string }
+  | { type: "section"; heading: string; body: string; link?: { text: string; to: string } }
   | { type: "callout"; body: string }
+  | { type: "quote"; body: string; attribution?: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
@@ -41,6 +42,7 @@ export type CaseStudyBlock =
 export type Project = {
   slug: string;
   title: string;
+  subtitle?: string;
   client: string;
   year: string;
   discipline: string;
@@ -51,6 +53,7 @@ export type Project = {
   caseStudy?: string;
   caseStudyBlocks?: CaseStudyBlock[];
 };
+
 
 export const projects: Project[] = [
   {
@@ -478,8 +481,79 @@ export const projects: Project[] = [
       },
     ],
   },
-
+  {
+    slug: "ai-native-design",
+    title: "AI-Native Design",
+    subtitle: "A new way of working, from idea to shipped",
+    client: "Meta Reality Labs",
+    year: "2026",
+    discipline: "Product Designer, System Apps",
+    timeline: "2025 to 2026",
+    team: "Product Designer, System Apps",
+    image: work7,
+    aspect: "square",
+    caseStudyBlocks: [
+      {
+        type: "intro",
+        body:
+          "Design usually ends at handoff: you draw it, an engineer builds it. I spent the last year collapsing that gap. By building an AI-native practice around the way I work, I took a system app from idea to running code on a VR headset with no engineer in the loop, hit a new kind of problem that came with that speed, built the fix, and brought my team along. This is the process behind the products.",
+      },
+      {
+        type: "section",
+        heading: "The system",
+        body:
+          "It started as a stack and became a system. The tools are mostly off the shelf: Claude Code, VS Code, Obsidian, Figma. What made them work together was the scaffolding I built around them. Every project gets its own context file the AI reads before it does anything, so it always knows the goal, the constraints, and the history. A set of custom commands handles the repetitive parts of my week, from capturing an idea to drafting a recap. The result is an assistant that understands my work the way a teammate would, not a chatbot I re-explain myself to every morning.",
+      },
+      {
+        type: "placeholder",
+        label: "Workflow diagram",
+        caption: "The workflow, built as a system the AI can read and act on.",
+        aspect: "wide",
+      },
+      {
+        type: "section",
+        heading: "Proof",
+        body:
+          "The first real test was the Clock app. I took it from idea to running code on a VR headset without an engineer touching it. The mechanism was the design work itself: I wrote specs detailed enough to build from, exact component states, spacing, and layout rules, in a form the AI could turn directly into production code. The spec was not a document that came before the build. The spec was the build.",
+        link: { text: "See the Clock app in VR System Apps for the product story.", to: "/work/meta-wearables" },
+      },
+      {
+        type: "placeholder",
+        label: "Spec and shipped app",
+        caption: "Spec on the left, shipped app on the right. The distance between them was a single designer.",
+        aspect: "wide",
+      },
+      {
+        type: "section",
+        heading: "The guardrail",
+        body:
+          "Speed came with a cost. Designs and code generated this way tended to drift from the design system: small inconsistencies in spacing, color, and components that add up across a product. Catching them by hand did not scale. So I worked with engineering to build a linter that checks design and code against the system automatically and flags where they diverge. Clock was its first test case. Moving fast had created a new problem, and the right response was to design the guardrail, not to slow down.",
+      },
+      {
+        type: "placeholder",
+        label: "Linter flagging drift",
+        caption: "The linter catches design-system drift automatically, so speed does not cost consistency.",
+        aspect: "wide",
+      },
+      {
+        type: "section",
+        heading: "Bringing the team along",
+        body:
+          "A practice that only helps one person is a hobby. I shared the workflow across the team, walked others through the setup, and the language of working this way became part of how we talk about the work. My manager recognized it directly:",
+      },
+      {
+        type: "quote",
+        body: "[PLACEHOLDER: manager quote, exact words]",
+        attribution: "[Name, Title]",
+      },
+      {
+        type: "callout",
+        body:
+          "The goal was never to use AI. It was to shrink the distance between an idea and a real, shipped product without losing the craft along the way. That is what working AI-native makes possible: one designer, end to end.",
+      },
+    ],
+  },
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2021", discipline: "Product Design", image: work5, aspect: "square" },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2020", discipline: "Connected Product Design", image: work6, aspect: "square" },
-  { slug: "ai-native-design", title: "AI Native Design Process", client: "Personal", year: "2026", discipline: "AI Design Process", image: work7, aspect: "square", caseStudy: "01 — The new stack: Replaced traditional design→handoff→eng pipeline. Tools: Claude Code, VSCode for Meta, Obsidian, Figma + Claude plugin, Terminal.\n\n02 — Proof: shipping the clock app: Zero to one, idea to VR headset, no engineer in the loop.\n\n03 — What shipping revealed: the linter: AI-generated designs + code drifting from design system. Built a linter to fix it. Collaborated with eng on problem definition, design, building.\n\n04 — Bringing the team along: Evangelized AI adoption. Manager recognized as first AI-native designer on the team. (Manager quote still needed)" },
 ];
+
