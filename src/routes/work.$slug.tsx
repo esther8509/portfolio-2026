@@ -88,7 +88,8 @@ function ProjectDetailPage() {
 
       {/* Meta strip */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
-        <div className="grid grid-cols-2 gap-6 border-y border-border/60 py-6 md:grid-cols-4">
+      <section className="mx-auto max-w-[1400px] px-6 md:px-10">
+        <div className="grid grid-cols-2 gap-6 border-y border-border/60 py-6 md:grid-cols-3">
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Company</div>
             <div className="mt-2 text-base font-medium">{project.client}</div>
@@ -98,16 +99,11 @@ function ProjectDetailPage() {
             <div className="mt-2 text-base font-medium">{project.team || project.discipline}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Role</div>
-            <div className="mt-2 text-base font-medium">
-              {project.role || (project.caseStudy || project.caseStudyBlocks ? "Case study" : "Coming soon")}
-            </div>
-          </div>
-          <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Timeline</div>
             <div className="mt-2 text-base font-medium">{project.timeline || project.year}</div>
           </div>
         </div>
+      </section>
       </section>
 
       {/* Body */}
