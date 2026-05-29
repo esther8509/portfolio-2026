@@ -339,17 +339,6 @@ export const projects: Project[] = [
         caption: "The walkthrough ends with a finished world the user can keep building on.",
       },
 
-      {
-        type: "section",
-        heading: "The guidance system",
-        body: "The walkthrough needed a consistent way to teach without overwhelming, so I designed a tooltip system: reusable guidance components that introduce a tool, point to it in context, and move the user forward one step at a time. Building it as a system rather than one-off screens kept the walkthrough coherent and let it scale as the editor added tools.",
-      },
-      {
-        type: "placeholder",
-        label: "Tooltip system",
-        caption: "A reusable tooltip system, the building blocks of the walkthrough.",
-        aspect: "wide",
-      },
 
       {
         type: "part",
