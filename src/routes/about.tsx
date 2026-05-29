@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader, SiteFooter } from "@/components/site-chrome";
+import portrait from "@/assets/esther-portrait.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -52,10 +53,12 @@ function AboutPage() {
             </div>
           </div>
           <div className="md:col-span-5">
-            <div className="flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-sm bg-muted">
-              <span className="text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                Portrait — to be added
-              </span>
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-sm bg-muted">
+              <img
+                src={portrait}
+                alt="Esther Nam"
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
