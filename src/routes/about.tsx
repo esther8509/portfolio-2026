@@ -49,7 +49,7 @@ function AboutPage() {
             </div>
           </div>
           <div className="md:col-span-5">
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-sm bg-muted">
+            <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-muted">
               <img
                 src={portrait}
                 alt="Esther Nam"
