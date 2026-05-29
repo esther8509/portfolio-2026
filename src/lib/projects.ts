@@ -188,7 +188,7 @@ export const projects: Project[] = [
     title: "Developer Platforms",
     client: "Meta",
     year: "2026",
-    discipline: "Developer Tooling",
+    discipline: "Developer Platforms",
     image: work2,
     aspect: "tall",
     caseStudyBlocks: [
