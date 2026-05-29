@@ -11,7 +11,6 @@ import clockAlarm from "@/assets/clock-alarm.jpeg";
 import clockTimer from "@/assets/clock-timer.jpeg";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
-import clockExploreAlarmVr from "@/assets/clock-explore-alarm-vr.png";
 import clockExploreSpec from "@/assets/clock-explore-spec.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
@@ -100,13 +99,6 @@ export const projects: Project[] = [
         heading: "Explorations",
         body:
           "Process artifacts from the design phase — surface composition, alert patterns, face shape, and the spec sheet that drove engineering handoff. Many of these states made it into the shipped app; others informed the direction without surviving final cut.",
-      },
-      {
-        type: "image",
-        src: clockExploreAlarmVr,
-        alt: "Alarm list explored in-room — surface floats in a modern living room with toggles, delete affordances, and metadata tags like Gentle, Urgent, and Silent",
-        caption: "Alarm list explored in-room — testing density, toggle ergonomics, and a metadata tag system (Gentle, Urgent, Silent) for at-a-glance triage.",
-        aspect: "wide",
       },
       {
         type: "image",
