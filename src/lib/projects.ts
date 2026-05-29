@@ -12,6 +12,7 @@ import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 import oculusDeveloper from "@/assets/oculus-developer.png";
 import mhcpDiscord from "@/assets/mhcp-discord.png";
+import metaBuildPaths from "@/assets/meta-build-paths.png";
 
 
 import nux01 from "@/assets/nux-01.png";
