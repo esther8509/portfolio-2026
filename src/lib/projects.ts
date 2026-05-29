@@ -62,6 +62,7 @@ export const projects: Project[] = [
     client: "Meta Reality Labs",
     year: "2026",
     discipline: "Wearables",
+    role: "Product Designer and Content Designer",
     image: work1,
     aspect: "square",
     caseStudyBlocks: [
