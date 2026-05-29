@@ -295,7 +295,7 @@ export const projects: Project[] = [
         type: "section",
         heading: "Internal partner tool",
         body:
-          "On the Meta side, I designed an internal partner tool for the team receiving and managing these cases. What started as an internal tool for the Quest developer team quickly got attention across Meta — Instagram, Facebook, and WhatsApp teams all took notice, leading to cross-org collaboration and company-wide impact.",
+          "On the Meta side, I designed an internal partner tool for the team receiving and managing these cases. What started as an internal tool for the Quest developer team quickly got attention across Meta — Instagram, Facebook, and WhatsApp teams all took notice, leading to cross-org collaboration and company-wide impact. (Screens for the internal tool can't be shared publicly.)",
       },
 
       {
