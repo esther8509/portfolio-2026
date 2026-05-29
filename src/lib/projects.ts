@@ -120,7 +120,7 @@ export const projects: Project[] = [
       {
         type: "part",
         title: "Files",
-        subtitle: "Iterative — platform capability unlock",
+        subtitle: "Iterative redesign, and a first for Meta Quest",
       },
       {
         type: "section",
