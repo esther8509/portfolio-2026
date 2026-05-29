@@ -286,22 +286,10 @@ export const projects: Project[] = [
           "The core flow was built around three moments: All cases — a clear overview of every issue a developer had submitted, with status at a glance. Start a case — a guided submission flow to capture the right information upfront, reducing back-and-forth. Case status — a detailed view of an individual case, showing progress and any communication from Meta.",
       },
       {
-        type: "placeholder",
-        label: "All cases view",
-        caption: "List layout, status indicators, and case hierarchy",
-        aspect: "wide",
-      },
-      {
-        type: "placeholder",
-        label: "Start a case",
-        caption: "Submission form and input structure",
-        aspect: "wide",
-      },
-      {
-        type: "placeholder",
-        label: "Case status",
-        caption: "Status tracking and communication thread",
-        aspect: "wide",
+        type: "video",
+        src: "/videos/feedback-hub.mp4",
+        caption:
+          "Full walkthrough of Feedback Hub — all cases overview, case submission flow, and case status tracking inside MQDH.",
       },
       {
         type: "section",
@@ -309,12 +297,7 @@ export const projects: Project[] = [
         body:
           "On the Meta side, I designed an internal partner tool for the team receiving and managing these cases. What started as an internal tool for the Quest developer team quickly got attention across Meta — Instagram, Facebook, and WhatsApp teams all took notice, leading to cross-org collaboration and company-wide impact.",
       },
-      {
-        type: "placeholder",
-        label: "Internal Meta partner tool",
-        caption: "Screenshots to be added when cleared to share",
-        aspect: "wide",
-      },
+
       {
         type: "section",
         heading: "Outcome",
