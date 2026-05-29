@@ -67,7 +67,7 @@ export const projects: Project[] = [
       {
         type: "intro",
         body:
-          "Every operating system needs a foundation. For Meta Quest, that foundation was missing. While competitors like Apple Vision Pro had utility apps, none had done them particularly well — treating them as afterthoughts rather than native, purposeful experiences. Our team saw the gap and decided to close it, starting with the apps users were already searching for.",
+          "Every operating system needs a foundation: the default apps that ship built in and quietly shape how a device feels to use. On phones that foundation is mature and invisible. In VR it barely exists yet. I'm the sole designer for three of those foundational apps on Meta Quest, Clock, Files, and Calendar, each one defining how a system app should behave when your inputs are your eyes, your hands, a controller, and a keyboard, sometimes all at once.",
       },
 
 
