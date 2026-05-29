@@ -207,10 +207,11 @@ export const projects: Project[] = [
           "Meta's developer ecosystem had a scaling problem. As new build paths expanded — Unity, Unreal, Horizon Worlds, and new desktop editors — the developer center couldn't keep up. The site still carried Oculus branding, content was outdated, and developers had to dig through thousands of pages of documentation just to find what was relevant to them. At the same time, the audience was split: hobbyists building their first VR experience and professional developers shipping commercial apps had fundamentally different needs, and the site wasn't meeting either. I was the sole designer leading a cross-functional team of 14 engineers and 10 documentation engineers to redesign the developer center end to end.",
       },
       {
-        type: "placeholder",
-        label: "Wayback Machine",
-        caption: "Original Oculus-branded site — outdated branding and the cluttered pre-redesign state",
-        aspect: "wide",
+        type: "image",
+        src: "/src/assets/oculus-developer.png",
+        alt: "Original Oculus-branded developer site captured from the Wayback Machine",
+        caption: "Original Oculus-branded site, outdated branding and the cluttered pre-redesign state",
+        natural: true,
       },
       {
         type: "section",
