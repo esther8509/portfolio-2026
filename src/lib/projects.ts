@@ -209,7 +209,7 @@ export const projects: Project[] = [
       },
       {
         type: "image",
-        src: "/src/assets/oculus-developer.png",
+        src: oculusDeveloper,
         alt: "Original Oculus-branded developer site captured from the Wayback Machine",
         caption: "Original Oculus-branded site, outdated branding and the cluttered pre-redesign state",
         natural: true,
