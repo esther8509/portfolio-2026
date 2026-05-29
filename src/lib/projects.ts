@@ -144,7 +144,7 @@ export const projects: Project[] = [
       {
         type: "part",
         title: "Calendar",
-        subtitle: "Shipped with Meta Quest v71 — Horizon OS redesign",
+        subtitle: "Shipped with Meta Quest v71, Horizon OS redesign",
       },
       {
         type: "section",
@@ -156,20 +156,14 @@ export const projects: Project[] = [
         type: "section",
         heading: "The design challenge",
         body:
-          "The challenge was precision — specifically, what happens when multiple events overlap in the same time slot? How does the user select the right one with just their eyes? I worked closely with engineering to solve this, ultimately designing a flyout that expands beyond the initial calendar real estate when multiple events compete for the same gaze target. It gave users a clear, precise way to select exactly what they meant.",
-      },
-      {
-        type: "placeholder",
-        label: "Calendar app",
-        caption: "Standard view and gaze target flyout for overlapping events",
-        aspect: "wide",
+          "The challenge was precision: specifically, what happens when multiple events overlap in the same time slot? How does the user select the right one with just their eyes? I worked closely with engineering to solve this, ultimately designing a flyout that expands beyond the initial calendar real estate when multiple events compete for the same gaze target. It gave users a clear, precise way to select exactly what they meant.",
       },
 
       {
         type: "section",
         heading: "Outcome",
         body:
-          "All three apps ship as default OS-level experiences on Meta Quest. Files received user praise on release notes for the improvements over the previous experience. Clock and Calendar represent new ground for the platform — utility done natively and thoughtfully, setting a bar that competitors haven't yet matched.",
+          "All three apps ship as default OS-level experiences on Meta Quest. Files received user praise on release notes for the improvements over the previous experience. Clock and Calendar represent new ground for the platform, utility done natively and thoughtfully, setting a bar that competitors haven't yet matched.",
       },
     ],
   },
