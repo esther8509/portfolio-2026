@@ -10,6 +10,7 @@ import clockHifi from "@/assets/clock-hifi.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
+import oculusDeveloper from "@/assets/oculus-developer.png";
 
 
 import nux01 from "@/assets/nux-01.png";
