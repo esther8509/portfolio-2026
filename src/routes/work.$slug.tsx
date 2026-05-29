@@ -72,6 +72,7 @@ function ProjectDetailPage() {
 
       {/* Title block */}
       <section className="mx-auto max-w-[1400px] px-6 pb-12 pt-16 md:px-10 md:pb-20 md:pt-28">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-9 md:col-start-4">
             <h1 className="text-display text-5xl font-medium leading-[0.95] tracking-tight md:text-7xl">
               {project.title}
@@ -81,15 +82,13 @@ function ProjectDetailPage() {
             )}
             {introText && (
               <p className="mt-8 max-w-2xl text-display text-lg font-medium leading-[1.35] tracking-tight text-muted-foreground md:text-xl">
-
                 {introText}
               </p>
             )}
           </div>
-
-          </div>
         </div>
       </section>
+
 
       {/* Meta strip */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
