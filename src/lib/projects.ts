@@ -87,13 +87,7 @@ export const projects: Project[] = [
         type: "section",
         heading: "Overview",
         body:
-          "A clear data signal started this one. Quest users were frequently searching for a clock app that didn't exist. That user need, combined with a team-wide push to experiment with AI-native building, created an unusual opportunity: I took Clock from ideation all the way to pushing code live onto the headset without any engineering intervention.",
-      },
-      {
-        type: "section",
-        heading: "The app",
-        body:
-          "The app was built for gaming and productivity use cases — the kind of lightweight utility you reach for mid-session. It has three tabs: Clock, Alarm, and Timer. Simple, focused, and designed to feel native to the platform in a way competitors haven't managed. This was the first real proof of a new way of working. The full process story lives in the AI-native section.",
+          "Clock started with a data signal: Quest users kept searching the store for a clock app that didn't exist. The answer was one app with three tabs, Clock, Alarm, and Timer, built for the way people actually spend time in a headset, like setting a timer mid-game or keeping an alarm running while you work in a focused space. The unusual part was how it got built. Paired with the team's push into AI-native development, I took Clock from idea to running code on the headset with no engineer in the loop. The full story of how that worked lives in the AI-Native Process section.",
       },
       {
         type: "image",
