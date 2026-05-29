@@ -33,6 +33,7 @@ import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
 import nuxFoundation04 from "@/assets/nux-foundation-04.png";
+import nuxFoundation05 from "@/assets/nux-foundation-05.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 
