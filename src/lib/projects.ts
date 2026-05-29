@@ -9,6 +9,7 @@ import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
+import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 
 
 import nux01 from "@/assets/nux-01.png";
@@ -505,10 +506,10 @@ export const projects: Project[] = [
           "It started as a stack and became a system. The tools are mostly off the shelf: Claude Code, VS Code, Obsidian, Figma. What made them work together was the scaffolding I built around them. Every project gets its own context file the AI reads before it does anything, so it always knows the goal, the constraints, and the history. A set of custom commands handles the repetitive parts of my week, from capturing an idea to drafting a recap. The result is an assistant that understands my work the way a teammate would, not a chatbot I re-explain myself to every morning.",
       },
       {
-        type: "placeholder",
-        label: "Workflow diagram",
+        type: "image",
+        src: aiNativeWorkflow,
+        alt: "Workflow diagram showing idea, design spec, AI build, shipped, with the context system feeding in",
         caption: "The workflow, built as a system the AI can read and act on.",
-        aspect: "wide",
       },
       {
         type: "section",
