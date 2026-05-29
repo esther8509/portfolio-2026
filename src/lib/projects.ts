@@ -3,7 +3,7 @@ import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/world-desktop-editor.jpg";
 import work4 from "@/assets/quest-for-business.webp";
 import work5 from "@/assets/alaska-airlines.png";
-import work6 from "@/assets/work-6.jpg";
+// import work6 from "@/assets/work-6.jpg";
 import work7 from "@/assets/work-7.jpg";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
@@ -585,6 +585,6 @@ export const projects: Project[] = [
       },
     ],
   },
-  { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2020", discipline: "Connected Product Design", image: work6, aspect: "square" },
+  // { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2020", discipline: "Connected Product Design", image: work6, aspect: "square" },
 ];
 
