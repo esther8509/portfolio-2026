@@ -46,6 +46,9 @@ function AboutPage() {
               <p>
                 I like designing foundational things: tools, systems, operating system experiences, and products that are still figuring out what they want to be. Recently that's evolved into building AI-native workflows where design and implementation happen almost at the same time. My background is in hardware, which taught me that the best systems usually disappear into the background.
               </p>
+              <p>
+                Outside work: I play melodica and busk at the park. I also collect plushies with a level of commitment that occasionally surprises me. The photo is not an accident.
+              </p>
             </div>
           </div>
           <div className="md:col-span-5">
@@ -56,7 +59,11 @@ function AboutPage() {
                 className="h-full w-full object-cover"
               />
             </div>
+            <div className="mt-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              Field research.
+            </div>
           </div>
+
         </div>
       </section>
 
