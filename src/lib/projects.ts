@@ -323,7 +323,7 @@ export const projects: Project[] = [
       },
       {
         type: "image-grid",
-        columns: 4,
+        columns: 2,
         images: [
           { src: nuxFoundation01, alt: "NUX walkthrough — Scenes intro" },
           { src: nuxFoundation02, alt: "NUX walkthrough — Asset Library" },
