@@ -559,8 +559,9 @@ export const projects: Project[] = [
       },
       {
         type: "quote",
-        body: "[PLACEHOLDER: manager quote, exact words]",
-        attribution: "[Name, Title]",
+        body:
+          "…What's stood out most this year is Esther's embrace of AI-native work and the ability to self teach the newest tool at rapid speed. During AI-First week she went from never using terminal to pushing diffs, learning ADB, VS Code remote SSH, Enkaku and Claude CLI from a standing start. She was the first PD on our team to lean into this new day of work, and her learning was invaluable in helping the rest of us integrate AI and pods into our work.",
+        attribution: "Manager, Meta Reality Labs",
       },
       {
         type: "callout",
