@@ -103,13 +103,6 @@ export const projects: Project[] = [
       },
       {
         type: "image",
-        src: clockExploreAlarmVr,
-        alt: "Alarm list explored in-room — surface floats in a modern living room with toggles, delete affordances, and metadata tags like Gentle, Urgent, and Silent",
-        caption: "Alarm list explored in-room — testing density, toggle ergonomics, and a metadata tag system (Gentle, Urgent, Silent) for at-a-glance triage.",
-        aspect: "wide",
-      },
-      {
-        type: "image",
         src: clockExploreSpec,
         alt: "Spec sheet showing every Clock state side-by-side — digital and analog clock views, alarm list and empty state, timer running view, and alarm/timer alert dialogs",
         caption: "Full state spec — every Clock, Alarm, and Timer surface laid out side-by-side for review and engineering handoff.",
