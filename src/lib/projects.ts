@@ -248,12 +248,7 @@ export const projects: Project[] = [
       },
 
       {
-        type: "placeholder",
-        label: "AI search prototype",
-        caption: "Query input and contextual result surfacing — add when available",
-        aspect: "wide",
-      },
-      {
+
         type: "section",
         heading: "Outcome",
         body:
