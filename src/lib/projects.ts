@@ -137,7 +137,7 @@ export const projects: Project[] = [
       {
         type: "video",
         src: "/files-drag-drop.mov",
-        caption: "Multi-select and drag and drop in action — files dragged from VR directly into a third-party app, a first for Meta Quest.",
+        caption: "Dragging a file from VR straight into a third-party app, a first for Meta Quest.",
         aspect: "wide",
       },
 
