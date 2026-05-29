@@ -94,8 +94,8 @@ function ProjectDetailPage() {
             <div className="mt-2 text-base font-medium">{project.client}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">VR OS</div>
-            <div className="mt-2 text-base font-medium">{project.discipline}</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Team</div>
+            <div className="mt-2 text-base font-medium">{project.team || project.discipline}</div>
           </div>
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Role</div>
