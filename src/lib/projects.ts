@@ -32,6 +32,7 @@ export type CaseStudyBlock =
   | { type: "intro"; body: string }
   | { type: "part"; eyebrow?: string; title: string; subtitle?: string }
   | { type: "section"; heading: string; body: string }
+  | { type: "callout"; body: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
