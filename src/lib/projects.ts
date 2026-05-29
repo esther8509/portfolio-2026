@@ -29,6 +29,10 @@ import nux10 from "@/assets/nux-10.png";
 import nux11 from "@/assets/nux-11.png";
 import nux12 from "@/assets/nux-12.png";
 import nux13 from "@/assets/nux-13.png";
+import nuxFoundation01 from "@/assets/nux-foundation-01.png";
+import nuxFoundation02 from "@/assets/nux-foundation-02.png";
+import nuxFoundation03 from "@/assets/nux-foundation-03.png";
+import nuxFoundation04 from "@/assets/nux-foundation-04.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 
@@ -317,22 +321,15 @@ export const projects: Project[] = [
         body: "The walkthrough covers three layers. Foundations: mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools: a guided tour of the core toolset and how to build within the editor. AI features: hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
       },
       {
-        type: "placeholder",
-        label: "Foundations screenshot",
-        caption: "Starting from zero: mouse, keyboard, and moving around the editor.",
-        aspect: "wide",
-      },
-      {
-        type: "placeholder",
-        label: "Editor tools screenshot",
-        caption: "A guided tour of the core tools, surfaced through in-context tooltips.",
-        aspect: "wide",
-      },
-      {
-        type: "placeholder",
-        label: "AI features screenshot",
-        caption: "Generating a skybox and meshes from a prompt, inside the walkthrough.",
-        aspect: "wide",
+        type: "image-grid",
+        columns: 4,
+        images: [
+          { src: nuxFoundation01, alt: "NUX walkthrough — Scenes intro" },
+          { src: nuxFoundation02, alt: "NUX walkthrough — Asset Library" },
+          { src: nuxFoundation03, alt: "NUX walkthrough — Rotating an object" },
+          { src: nuxFoundation04, alt: "NUX walkthrough — Generative AI tools" },
+        ],
+        caption: "The NUX walks creators from a blank scene to a working world, one topic at a time.",
       },
 
       {
