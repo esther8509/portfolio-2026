@@ -7,7 +7,6 @@ import work6 from "@/assets/work-6.jpg";
 import work7 from "@/assets/work-7.jpg";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
-import clockExploreSpec from "@/assets/clock-explore-spec.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 
