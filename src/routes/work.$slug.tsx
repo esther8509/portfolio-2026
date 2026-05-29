@@ -211,10 +211,10 @@ function ProjectDetailPage() {
                       <img
                         src={b.src}
                         alt={b.alt}
-                        className="h-auto w-full rounded-md"
+                        className={b.natural ? "mx-auto h-auto max-w-full rounded-md" : "h-auto w-full rounded-md"}
                         loading="lazy"
                       />
-                      {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
+                      {b.caption && <figcaption className={b.natural ? "text-center text-sm text-muted-foreground" : "text-sm text-muted-foreground"}>{b.caption}</figcaption>}
                     </figure>
                   );
                 }

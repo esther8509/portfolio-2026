@@ -36,7 +36,7 @@ export type CaseStudyBlock =
   | { type: "quote"; body: string; attribution?: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
-  | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
+  | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square"; natural?: boolean }
   | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
   | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
 
@@ -507,6 +507,7 @@ export const projects: Project[] = [
       },
       {
         type: "image",
+        natural: true,
         src: aiNativeWorkflow,
         alt: "Workflow diagram showing idea, design spec, AI build, shipped, with the context system feeding in",
         caption: "The workflow, built as a system the AI can read and act on.",
