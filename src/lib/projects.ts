@@ -13,6 +13,7 @@ import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 import oculusDeveloper from "@/assets/oculus-developer.png";
 import mhcpDiscord from "@/assets/mhcp-discord.png";
 import metaBuildPaths from "@/assets/meta-build-paths.png";
+import metaDocPage from "@/assets/meta-doc-page.png";
 
 
 import nux01 from "@/assets/nux-01.png";
