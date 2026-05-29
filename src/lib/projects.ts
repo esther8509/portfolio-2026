@@ -222,6 +222,13 @@ export const projects: Project[] = [
           "Without dedicated research support, I went directly to developers on Discord — getting real-time feedback as features were being built. This proactive outreach was recognized by leadership as going beyond the scope of my role, and it became a core part of how the team validated decisions throughout the project. The redesign focused on meeting developers where they were. We rebuilt the navigation from the ground up, creating clear pathways for each build type so developers could find what was relevant to them without sifting through irrelevant content. We significantly improved the API reference — prioritizing quick code access and copy functionality that developers actually need day to day. And we began prototyping an AI-powered search experience to further reduce friction in finding the right documentation across thousands of pages.",
       },
       {
+        type: "image",
+        src: mhcpDiscord,
+        alt: "MHCP Engagements Discord server where developer feedback was gathered in real time",
+        caption: "MHCP Engagements Discord, where real-time developer feedback shaped decisions throughout the redesign",
+        natural: true,
+      },
+      {
         type: "placeholder",
         label: "Navigation system",
         caption: "Navigation structure and the reasoning behind the hierarchy decisions",
