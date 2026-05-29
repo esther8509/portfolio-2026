@@ -29,11 +29,6 @@ import nux10 from "@/assets/nux-10.png";
 import nux11 from "@/assets/nux-11.png";
 import nux12 from "@/assets/nux-12.png";
 import nux13 from "@/assets/nux-13.png";
-import nuxFoundation01 from "@/assets/nux-foundation-01.png";
-import nuxFoundation02 from "@/assets/nux-foundation-02.png";
-import nuxFoundation03 from "@/assets/nux-foundation-03.png";
-import nuxFoundation04 from "@/assets/nux-foundation-04.png";
-import nuxFoundation05 from "@/assets/nux-foundation-05.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 
@@ -322,23 +317,35 @@ export const projects: Project[] = [
         body: "The walkthrough covers three layers. Foundations: mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools: a guided tour of the core toolset and how to build within the editor. AI features: hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
       },
       {
-        type: "image-grid",
-        columns: 2,
-        images: [
-          { src: nuxFoundation01, alt: "NUX walkthrough — Scenes intro" },
-          { src: nuxFoundation02, alt: "NUX walkthrough — Asset Library" },
-          { src: nuxFoundation03, alt: "NUX walkthrough — Rotating an object" },
-          { src: nuxFoundation04, alt: "NUX walkthrough — Generative AI tools" },
-        ],
-        caption: "The NUX walks creators from a blank scene to a working world, one topic at a time.",
+        type: "placeholder",
+        label: "Foundations screenshot",
+        caption: "Starting from zero: mouse, keyboard, and moving around the editor.",
+        aspect: "wide",
       },
       {
-        type: "image",
-        src: nuxFoundation05,
-        alt: "NUX completion screen — Congrats, you've built a world",
-        caption: "The walkthrough ends with a finished world the user can keep building on.",
+        type: "placeholder",
+        label: "Editor tools screenshot",
+        caption: "A guided tour of the core tools, surfaced through in-context tooltips.",
+        aspect: "wide",
+      },
+      {
+        type: "placeholder",
+        label: "AI features screenshot",
+        caption: "Generating a skybox and meshes from a prompt, inside the walkthrough.",
+        aspect: "wide",
       },
 
+      {
+        type: "section",
+        heading: "The guidance system",
+        body: "The walkthrough needed a consistent way to teach without overwhelming, so I designed a tooltip system: reusable guidance components that introduce a tool, point to it in context, and move the user forward one step at a time. Building it as a system rather than one-off screens kept the walkthrough coherent and let it scale as the editor added tools.",
+      },
+      {
+        type: "placeholder",
+        label: "Tooltip system",
+        caption: "A reusable tooltip system, the building blocks of the walkthrough.",
+        aspect: "wide",
+      },
 
       {
         type: "part",
@@ -394,7 +401,7 @@ export const projects: Project[] = [
     caseStudyBlocks: [
       {
         type: "intro",
-        body: "Managing a fleet of VR headsets at scale is a fundamentally different problem than managing phones or laptops. The hardware is new, the use cases are varied, and the IT admins responsible for deployment range from small business owners wearing multiple hats to enterprise IT teams with complex security requirements. When Meta decided to build a first-party device management solution, there was nothing to start from. I was the sole designer on Device Manager, the core surface within what is now Meta Horizon Managed Services, working with a team of 10+ engineers and 1 PM. The tool gives IT admins centralized control over their entire fleet of Quest headsets including bulk provisioning, device presets, status monitoring, remote wipe, find my device, PIN reset, and conflict resolution when connecting or detecting devices. It also laid the groundwork for third-party MDM integrations with partners like ArborXR, Ivanti, and Microsoft Intune.",
+        body: "Managing a fleet of VR headsets at scale is a fundamentally different problem than managing phones or laptops. When Meta decided to build a first-party solution, there was nothing to start from. I was the sole designer on Device Manager, now part of Meta Horizon Managed Services, working with 10+ engineers and 1 PM to give IT admins centralized control over their Quest fleets: provisioning, presets, remote wipe, and conflict resolution, with groundwork laid for third-party MDM partners like ArborXR and Microsoft Intune.",
       },
 
       {
