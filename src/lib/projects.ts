@@ -49,6 +49,7 @@ export type Project = {
   year: string;
   discipline: string;
   role?: string;
+  timeline?: string;
   image: string;
   aspect: "tall" | "wide" | "square";
   caseStudy?: string;
