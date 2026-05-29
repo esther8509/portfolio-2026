@@ -25,7 +25,7 @@ export function SiteHeader() {
             </Link>
           ))}
           <a
-            href="/resume.pdf"
+            href="https://docs.google.com/document/d/e/2PACX-1vQKN6CL3zkqByhqYAxzKfM9m8btvLGfYZLb9jskVl8140ezrY_Hp2eBFcp3ekqOIuX6WXmqaUJh-f0C/pub"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
