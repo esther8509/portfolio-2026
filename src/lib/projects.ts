@@ -394,7 +394,7 @@ export const projects: Project[] = [
     title: "Quest for Business",
     client: "Meta",
     year: "2024",
-    discipline: "Enterprise VR",
+    discipline: "Horizon Managed Services",
     team: "Horizon Managed Services",
     image: work4,
     aspect: "tall",
