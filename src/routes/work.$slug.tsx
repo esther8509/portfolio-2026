@@ -94,13 +94,13 @@ function ProjectDetailPage() {
             <div className="mt-2 text-base font-medium">{project.client}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Team</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">VR OS</div>
             <div className="mt-2 text-base font-medium">{project.discipline}</div>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Project</div>
+            <div className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Role</div>
             <div className="mt-2 text-base font-medium">
-              {project.caseStudy || project.caseStudyBlocks ? "Case study" : "Coming soon"}
+              {project.role || (project.caseStudy || project.caseStudyBlocks ? "Case study" : "Coming soon")}
             </div>
           </div>
         </div>
