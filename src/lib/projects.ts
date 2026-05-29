@@ -299,12 +299,6 @@ export const projects: Project[] = [
         body:
           "The internal tool created a ripple effect across Meta's major platform teams, sparking collaboration that extended well beyond the original scope. Developer satisfaction with the support process improved significantly following launch.",
       },
-      {
-        type: "placeholder",
-        label: "Outcome metric",
-        caption: "Specific metric or developer feedback quote — to be added",
-        aspect: "wide",
-      },
     ],
   },
   {
