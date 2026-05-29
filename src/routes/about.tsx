@@ -87,20 +87,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* Recognition */}
-      <section className="mx-auto mt-24 max-w-[1400px] px-6 md:px-10">
-        <div className="grid grid-cols-1 gap-10 border-t border-border/60 pt-12 md:grid-cols-12">
-          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Recognition
-          </div>
-          <div className="md:col-span-9">
-            <div className="border-l border-border pl-5">
-              <div className="text-display text-xl text-muted-foreground">add recognition here</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <SiteFooter />
     </div>
   );
