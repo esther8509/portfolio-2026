@@ -555,7 +555,7 @@ export const projects: Project[] = [
         type: "section",
         heading: "Bringing the team along",
         body:
-          "A practice that only helps one person is a hobby. I shared the workflow across the team, walked others through the setup, and the language of working this way became part of how we talk about the work. My manager recognized it directly:",
+          "I shared the workflow across the team, walked others through the setup, and the language of working this way became part of how we talk about the work. My manager recognized it directly:",
       },
       {
         type: "quote",
