@@ -553,9 +553,7 @@ export const projects: Project[] = [
       },
     ],
   },
-];
-
   { slug: "alaska-airlines", title: "Alaska Airlines", client: "Alaska Airlines", year: "2021", discipline: "Product Design", image: work5, aspect: "square" },
   { slug: "keurig-k-plus", title: "K+ Smart Brewer", client: "Keurig Dr Pepper", year: "2020", discipline: "Connected Product Design", image: work6, aspect: "square" },
-  { slug: "ai-native-design", title: "AI Native Design Process", client: "Personal", year: "2026", discipline: "AI Design Process", image: work7, aspect: "square", caseStudy: "01 — The new stack: Replaced traditional design→handoff→eng pipeline. Tools: Claude Code, VSCode for Meta, Obsidian, Figma + Claude plugin, Terminal.\n\n02 — Proof: shipping the clock app: Zero to one, idea to VR headset, no engineer in the loop.\n\n03 — What shipping revealed: the linter: AI-generated designs + code drifting from design system. Built a linter to fix it. Collaborated with eng on problem definition, design, building.\n\n04 — Bringing the team along: Evangelized AI adoption. Manager recognized as first AI-native designer on the team. (Manager quote still needed)" },
 ];
+
