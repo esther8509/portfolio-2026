@@ -332,6 +332,12 @@ export const projects: Project[] = [
         ],
         caption: "The NUX walks creators from a blank scene to a working world, one topic at a time.",
       },
+      {
+        type: "image",
+        src: nuxFoundation05,
+        alt: "NUX completion screen — Congrats, you've built a world",
+        caption: "The walkthrough ends with a finished world the user can keep building on.",
+      },
 
       {
         type: "section",
