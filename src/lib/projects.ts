@@ -231,11 +231,13 @@ export const projects: Project[] = [
         natural: true,
       },
       {
-        type: "placeholder",
-        label: "Navigation system",
-        caption: "Navigation structure and the reasoning behind the hierarchy decisions",
-        aspect: "wide",
+        type: "image",
+        src: metaDocPage,
+        alt: "Typical Meta Horizon documentation page showing the rebuilt navigation and on-this-page structure",
+        caption: "A typical documentation page after the redesign — left-rail navigation by build path, on-this-page anchors, and related resources.",
+        natural: true,
       },
+
       {
         type: "placeholder",
         label: "API reference",
