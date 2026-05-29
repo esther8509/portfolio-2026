@@ -147,6 +147,17 @@ function ProjectDetailPage() {
                     </div>
                   );
                 }
+                if (b.type === "callout") {
+                  return (
+                    <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
+                      <div className="md:col-span-10 md:col-start-2">
+                        <p className="text-display text-2xl font-medium leading-[1.2] tracking-tight text-foreground md:text-4xl">
+                          {b.body}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                }
                 if (b.type === "placeholder") {
                   const aspect =
                     b.aspect === "tall" ? "aspect-[4/5]" : b.aspect === "square" ? "aspect-square" : "aspect-[16/9]";
