@@ -21,10 +21,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const cv = [
-  { year: "2022 — Present", role: "Meta, System Apps", place: "Bay Area" },
-  { year: "[YEAR — YEAR]", role: "Alaska Airlines", place: "[Location]" },
-  { year: "[YEAR — YEAR]", role: "Keurig", place: "[Location]" },
-  { year: "[YEAR]", role: "[Degree, School]", place: "[Institution]" },
+  { year: "2021 — Present", role: "Meta, Reality Labs", place: "Bay Area" },
+  { year: "2021", role: "Alaska Airlines", place: "Seattle" },
+  { year: "2020 — 2021", role: "Keurig Dr Pepper", place: "" },
+  { year: "", role: "School of the Art Institute of Chicago, BFA", place: "" },
 ];
 
 function AboutPage() {
