@@ -132,7 +132,7 @@ export const projects: Project[] = [
         type: "section",
         heading: "Reception",
         body:
-          "Release notes for the update received praise from users, who noticed and appreciated the improvement over what came before.",
+          "When it shipped, the new drag and drop was called out directly in user response to the release.",
       },
       {
         type: "video",
