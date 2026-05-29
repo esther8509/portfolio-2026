@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Esther Nam is a product designer at Meta building the system layer for spatial computing.",
+          "Esther Nam is a product designer at Meta focused on foundational experiences for emerging platforms.",
       },
       { property: "og:title", content: "About — Esther Nam" },
       {
