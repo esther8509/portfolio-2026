@@ -15,7 +15,8 @@ import clockExploreAlarmVr from "@/assets/clock-explore-alarm-vr.png";
 import clockExploreSpec from "@/assets/clock-explore-spec.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
-import clockExploreBoard from "@/assets/clock-explore-board.png";
+
+
 import nux01 from "@/assets/nux-01.png";
 import nux02 from "@/assets/nux-02.png";
 import nux03 from "@/assets/nux-03.png";
