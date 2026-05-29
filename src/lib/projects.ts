@@ -34,6 +34,11 @@ import videoLibrary from "@/assets/video-library.png";
 import conflictResolutionFlow from "@/assets/conflict-resolution-flow.png";
 import presetsCreate from "@/assets/presets-create.png";
 import presetsExperience from "@/assets/presets-experience.png";
+import nuxFoundation01 from "@/assets/nux-foundation-01.png";
+import nuxFoundation02 from "@/assets/nux-foundation-02.png";
+import nuxFoundation03 from "@/assets/nux-foundation-03.png";
+import nuxFoundation04 from "@/assets/nux-foundation-04.png";
+import nuxFoundation05 from "@/assets/nux-foundation-05.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -320,34 +325,21 @@ export const projects: Project[] = [
         body: "The walkthrough covers three layers. Foundations: mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools: a guided tour of the core toolset and how to build within the editor. AI features: hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
       },
       {
-        type: "placeholder",
-        label: "Foundations screenshot",
+        type: "image-grid",
+        columns: 2,
+        images: [
+          { src: nuxFoundation01, alt: "NUX foundations screen 1" },
+          { src: nuxFoundation02, alt: "NUX foundations screen 2" },
+          { src: nuxFoundation03, alt: "NUX foundations screen 3" },
+          { src: nuxFoundation04, alt: "NUX foundations screen 4" },
+        ],
         caption: "Starting from zero: mouse, keyboard, and moving around the editor.",
-        aspect: "wide",
       },
       {
-        type: "placeholder",
-        label: "Editor tools screenshot",
-        caption: "A guided tour of the core tools, surfaced through in-context tooltips.",
-        aspect: "wide",
-      },
-      {
-        type: "placeholder",
-        label: "AI features screenshot",
-        caption: "Generating a skybox and meshes from a prompt, inside the walkthrough.",
-        aspect: "wide",
-      },
-
-      {
-        type: "section",
-        heading: "The guidance system",
-        body: "The walkthrough needed a consistent way to teach without overwhelming, so I designed a tooltip system: reusable guidance components that introduce a tool, point to it in context, and move the user forward one step at a time. Building it as a system rather than one-off screens kept the walkthrough coherent and let it scale as the editor added tools.",
-      },
-      {
-        type: "placeholder",
-        label: "Tooltip system",
-        caption: "A reusable tooltip system, the building blocks of the walkthrough.",
-        aspect: "wide",
+        type: "image",
+        src: nuxFoundation05,
+        alt: "Finished world at the end of the NUX",
+        caption: "The user is done and now ready to work with the world that they have built.",
       },
 
       {
