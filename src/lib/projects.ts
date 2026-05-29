@@ -31,6 +31,7 @@ import nux12 from "@/assets/nux-12.png";
 import nux13 from "@/assets/nux-13.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
+import conflictResolutionFlow from "@/assets/conflict-resolution-flow.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -434,10 +435,10 @@ export const projects: Project[] = [
         body: "Another significant design challenge was conflict resolution. Certain device management actions carry serious consequences — wiping a device, for example, can run into privacy concerns or data complications that need to be surfaced before the admin proceeds. The design solution was a system of contextual blocking modals and warnings that appeared at the right moment depending on the specific situation. With dozens of permutations to account for across different actions, device states, and enterprise contexts, mapping and designing this system required careful logic and close collaboration with engineering.",
       },
       {
-        type: "placeholder",
-        label: "Conflict resolution flow",
-        caption: "Contextual warning and blocking modal examples across device states",
-        aspect: "wide",
+        type: "image",
+        src: conflictResolutionFlow,
+        alt: "Conflict resolution flow map across device management actions",
+        caption: "Mapping contextual warnings and blocking modals across dozens of action/state permutations.",
       },
 
       {
