@@ -48,6 +48,7 @@ export type Project = {
   client: string;
   year: string;
   discipline: string;
+  role?: string;
   image: string;
   aspect: "tall" | "wide" | "square";
   caseStudy?: string;
