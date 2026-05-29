@@ -120,24 +120,24 @@ export const projects: Project[] = [
       {
         type: "part",
         title: "Files",
-        subtitle: "Iterative — platform capability unlock",
+        subtitle: "Iterative redesign, and a first for Meta Quest",
       },
       {
         type: "section",
         heading: "Overview",
         body:
-          "The Files app already existed, but the experience needed meaningful improvement. The headline feature I designed was multi-select and drag and drop — and more importantly, the ability to drag files from VR directly into third-party apps like WhatsApp. That was a first for Meta Quest, and a real platform capability unlock, not just a UI improvement.",
+          "Files already existed, but the experience needed real work. The headline feature I designed was multi-select with drag and drop, including dragging a file straight from VR into a third-party app like WhatsApp. That had never been possible on Meta Quest before. It is a small interaction with a big shift behind it: Files stops being a place you store things and becomes part of how you move work across the system.",
       },
       {
         type: "section",
         heading: "Reception",
         body:
-          "Release notes for the update received praise from users, who noticed and appreciated the improvement over what came before.",
+          "When it shipped, the new drag and drop was called out directly in user response to the release.",
       },
       {
         type: "video",
         src: "/files-drag-drop.mov",
-        caption: "Multi-select and drag and drop in action — files dragged from VR directly into a third-party app, a first for Meta Quest.",
+        caption: "Dragging a file from VR straight into a third-party app, a first for Meta Quest.",
         aspect: "wide",
       },
 
