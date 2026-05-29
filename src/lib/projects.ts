@@ -333,27 +333,38 @@ export const projects: Project[] = [
         type: "section",
         heading: "The design",
         body:
-          "The walkthrough covers three layers: Foundations — mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools — a guided tour of the core toolset and how to build within the editor. AI features — hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
+          "The walkthrough covers three layers. Foundations: mouse, keyboard, and basic navigation for users who had never touched a game engine before. Editor tools: a guided tour of the core toolset and how to build within the editor. AI features: hands-on introduction to the editor's AI capabilities including skybox generation, AI mesh creation from prompts, and TypeScript scripting assistance.",
       },
       {
-        type: "image-grid",
-        columns: 2,
-        images: [
-          { src: nux01, alt: "NUX topic 1 — Scenes: kick off your scene" },
-          { src: nux02, alt: "NUX topic 2 — Navigation: rotate the camera view" },
-          { src: nux03, alt: "NUX topic 2 — Navigation: shift the camera view" },
-          { src: nux04, alt: "NUX topic 2 — Navigation: zoom in and out" },
-          { src: nux05, alt: "NUX topic 3 — Asset Library: explore props and effects" },
-          { src: nux06, alt: "NUX topic 3 — Asset Library: add an object" },
-          { src: nux07, alt: "NUX topic 3 — Asset Library: rotate an object" },
-          { src: nux13, alt: "NUX topic 3 — Asset Library: move an object" },
-          { src: nux12, alt: "NUX topic 4 — Playtest: test your scene" },
-          { src: nux11, alt: "NUX topic 4 — Playtest: exit test mode" },
-          { src: nux10, alt: "NUX topic 5 — Properties: adjust player gravity" },
-          { src: nux09, alt: "NUX topic 6 — Generative AI: explore smart tools" },
-          { src: nux08, alt: "NUX completion — you've built a world" },
-        ],
-        caption: "Foundations, editor tools, and AI features",
+        type: "placeholder",
+        label: "Foundations screenshot",
+        caption: "Starting from zero: mouse, keyboard, and moving around the editor.",
+        aspect: "wide",
+      },
+      {
+        type: "placeholder",
+        label: "Editor tools screenshot",
+        caption: "A guided tour of the core tools, surfaced through in-context tooltips.",
+        aspect: "wide",
+      },
+      {
+        type: "placeholder",
+        label: "AI features screenshot",
+        caption: "Generating a skybox and meshes from a prompt, inside the walkthrough.",
+        aspect: "wide",
+      },
+
+      {
+        type: "section",
+        heading: "The guidance system",
+        body:
+          "The walkthrough needed a consistent way to teach without overwhelming, so I designed a tooltip system: reusable guidance components that introduce a tool, point to it in context, and move the user forward one step at a time. Building it as a system rather than one-off screens kept the walkthrough coherent and let it scale as the editor added tools.",
+      },
+      {
+        type: "placeholder",
+        label: "Tooltip system",
+        caption: "A reusable tooltip system, the building blocks of the walkthrough.",
+        aspect: "wide",
       },
 
       {
@@ -390,9 +401,14 @@ export const projects: Project[] = [
       },
       {
         type: "placeholder",
-        label: "Outcome metric",
-        caption: "Specific metrics or user feedback — to be added when available",
+        label: "Finished world",
+        caption: "The end of the walkthrough is not a checklist. It is a world the user has actually built.",
         aspect: "wide",
+      },
+      {
+        type: "callout",
+        body:
+          "The goal was not to teach the editor. It was to make sure that by the end, you had already built something in it.",
       },
     ],
   },
