@@ -546,12 +546,6 @@ export const projects: Project[] = [
           "Speed came with a cost. Designs and code generated this way tended to drift from the design system: small inconsistencies in spacing, color, and components that add up across a product. Catching them by hand did not scale. So I worked with engineering to build a linter that checks design and code against the system automatically and flags where they diverge. Clock was its first test case. Moving fast had created a new problem, and the right response was to design the guardrail, not to slow down.",
       },
       {
-        type: "placeholder",
-        label: "Linter flagging drift",
-        caption: "The linter catches design-system drift automatically, so speed does not cost consistency.",
-        aspect: "wide",
-      },
-      {
         type: "section",
         heading: "Bringing the team along",
         body:
