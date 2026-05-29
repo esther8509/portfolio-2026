@@ -128,13 +128,7 @@ export const projects: Project[] = [
         caption: "Face shape exploration — circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
         aspect: "wide",
       },
-      {
-        type: "image",
-        src: clockExploreBoard,
-        alt: "Internal task board view organizing alarm states — empty state, list view, add/error/edit dialogs, and time's up notification — each linked to a task ticket marked ready for shipping",
-        caption: "Shipping board — each state tracked as its own ticket, scoped tightly so engineering could land them independently.",
-        aspect: "wide",
-      },
+
 
       {
         type: "part",
