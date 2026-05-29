@@ -537,7 +537,7 @@ export const projects: Project[] = [
     title: "Alaska Airlines",
     client: "Alaska Airlines",
     year: "2021",
-    discipline: "Product Design",
+    discipline: "Consumer products",
     image: work5,
     aspect: "square",
     caseStudyBlocks: [
