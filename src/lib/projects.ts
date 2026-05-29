@@ -50,6 +50,7 @@ export type Project = {
   discipline: string;
   role?: string;
   timeline?: string;
+  team?: string;
   image: string;
   aspect: "tall" | "wide" | "square";
   caseStudy?: string;
@@ -65,6 +66,7 @@ export const projects: Project[] = [
     discipline: "Wearables",
     role: "Product Designer and Content Designer",
     timeline: "H1 2026",
+    team: "VR OS",
     image: work1,
     aspect: "square",
     caseStudyBlocks: [
