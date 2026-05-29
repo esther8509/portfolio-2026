@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Esther Nam is a product designer at Meta building the system layer for spatial computing.",
+          "Esther Nam is a product designer at Meta focused on foundational experiences for emerging platforms.",
       },
       { property: "og:title", content: "About — Esther Nam" },
       {
@@ -39,7 +39,7 @@ function AboutPage() {
               About — Esther Nam
             </div>
             <h1 className="text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
-              I'm a product designer at Meta building the system layer for spatial computing,
+              I'm a product designer at Meta focused on foundational experiences for emerging platforms,
               <span className="italic text-muted-foreground">
                 {" "}
                 the kind of work that lands when it feels like it was always there.
