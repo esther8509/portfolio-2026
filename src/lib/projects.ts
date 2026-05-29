@@ -30,8 +30,9 @@ import videoLibrary from "@/assets/video-library.png";
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
   | { type: "part"; eyebrow?: string; title: string; subtitle?: string }
-  | { type: "section"; heading: string; body: string }
+  | { type: "section"; heading: string; body: string; link?: { text: string; to: string } }
   | { type: "callout"; body: string }
+  | { type: "quote"; body: string; attribution?: string }
   | { type: "placeholder"; label: string; caption: string; aspect?: "wide" | "tall" | "square" }
   | { type: "placeholder-group"; title: string; items: string[] }
   | { type: "image"; src: string; alt: string; caption?: string; aspect?: "wide" | "tall" | "square" }
@@ -41,6 +42,7 @@ export type CaseStudyBlock =
 export type Project = {
   slug: string;
   title: string;
+  subtitle?: string;
   client: string;
   year: string;
   discipline: string;
@@ -51,6 +53,7 @@ export type Project = {
   caseStudy?: string;
   caseStudyBlocks?: CaseStudyBlock[];
 };
+
 
 export const projects: Project[] = [
   {
