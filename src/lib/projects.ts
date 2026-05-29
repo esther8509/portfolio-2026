@@ -32,6 +32,8 @@ import nux13 from "@/assets/nux-13.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 import conflictResolutionFlow from "@/assets/conflict-resolution-flow.png";
+import presetsCreate from "@/assets/presets-create.png";
+import presetsExperience from "@/assets/presets-experience.png";
 
 export type CaseStudyBlock =
   | { type: "intro"; body: string }
@@ -417,10 +419,13 @@ export const projects: Project[] = [
         body: "The hardest problem was presets. A small business deploying five headsets has completely different needs than an enterprise rolling out hundreds across multiple locations. I led user research across enterprise types and sizes to map what each segment actually needed, and that research directly shaped a preset system that gave admins a relevant starting point without building from scratch.",
       },
       {
-        type: "placeholder",
-        label: "Preset design exploration",
-        caption: "Extensive ideation and iterations across SMB, mid-market, and enterprise configurations",
-        aspect: "wide",
+        type: "image-grid",
+        columns: 2,
+        images: [
+          { src: presetsCreate, alt: "Device presets list with Create device preset menu showing Individual and Shared modes" },
+          { src: presetsExperience, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
+        ],
+        caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
       },
 
       {
