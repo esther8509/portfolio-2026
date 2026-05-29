@@ -76,7 +76,7 @@ export const projects: Project[] = [
       {
         type: "part",
         title: "Clock",
-        subtitle: "Zero to one — shipped via AI-native workflow",
+        subtitle: "Zero to one, shipped via an AI-native workflow",
       },
       {
         type: "section",
@@ -87,7 +87,7 @@ export const projects: Project[] = [
       {
         type: "image",
         src: clockHifi,
-        alt: "High-fidelity Clock concept — translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
+        alt: "High-fidelity Clock concept: translucent liquid-glass surface with an analog face and warm amber second hand, augmenting a wood-paneled living room",
         caption: "Latest high-fidelity exploration (in progress), and one of the showcase apps for the new AI glasses design system. Leaning into translucent, glass-like augments and depth instead of hard color blocks.",
         aspect: "wide",
       },
@@ -95,29 +95,27 @@ export const projects: Project[] = [
         type: "section",
         heading: "Explorations",
         body:
-          "Process artifacts from the design phase — surface composition, alert patterns, face shape, and the spec sheet that drove engineering handoff. Many of these states made it into the shipped app; others informed the direction without surviving final cut.",
-      },
-      {
-        type: "image",
-        src: clockExploreSpec,
-        alt: "Spec sheet showing every Clock state side-by-side — digital and analog clock views, alarm list and empty state, timer running view, and alarm/timer alert dialogs",
-        caption: "Full state spec — every Clock, Alarm, and Timer surface laid out side-by-side for review and engineering handoff.",
-        aspect: "wide",
+          "Process artifacts from the design phase: surface composition, alert patterns, face shape, and a spec sheet detailed enough to drive the build itself. Many of these states shipped; others shaped the direction without surviving the final cut.",
       },
       {
         type: "image",
         src: clockExploreAlerts,
-        alt: "Alert pattern exploration — Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
-        caption: "Alert pattern study — weighing a focused modal dialog against a less interruptive toast for alarm and timer notifications.",
+        alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
+        caption: "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
         aspect: "wide",
       },
       {
         type: "image",
         src: clockExploreFaceShape,
-        alt: "Two analog clock face explorations side-by-side — a perfect circle on the left and a rounded square on the right",
-        caption: "Face shape exploration — circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
+        alt: "Two analog clock face explorations side-by-side: a perfect circle on the left and a rounded square on the right",
+        caption: "Face shape exploration: circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
         aspect: "wide",
       },
+      {
+        type: "callout",
+        body: "What started as a search query for a missing app is now a showcase product for Meta's next-generation design language, taken from idea to headset by a single designer.",
+      },
+
 
 
       {
