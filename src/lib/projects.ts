@@ -240,11 +240,13 @@ export const projects: Project[] = [
       },
 
       {
-        type: "placeholder",
-        label: "API reference",
-        caption: "Improved code snippet UI and copy interaction",
-        aspect: "wide",
+        type: "image",
+        src: metaApiReference,
+        alt: "API reference component showing function signature, parameters, returns, and remarks",
+        caption: "API reference component — function signature, parameters, returns, and remarks laid out for fast scanning and copy.",
+        natural: true,
       },
+
       {
         type: "placeholder",
         label: "AI search prototype",
