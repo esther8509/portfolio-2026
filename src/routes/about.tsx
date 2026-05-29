@@ -40,11 +40,7 @@ function AboutPage() {
               About — Esther Nam
             </div>
             <h1 className="text-display text-4xl font-medium leading-[1.05] tracking-tight md:text-6xl">
-              I'm a product designer at Meta focused on foundational experiences for emerging platforms,
-              <span className="italic text-muted-foreground">
-                {" "}
-                the kind of work that lands when it feels like it was always there.
-              </span>
+              I'm a product designer at Meta designing products, systems, and interactions for emerging platforms.
             </h1>
             <div className="mt-10 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg md:max-w-xl">
               <p>
