@@ -150,8 +150,8 @@ function ProjectDetailPage() {
                 if (b.type === "callout") {
                   return (
                     <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-12">
-                      <div className="md:col-span-10 md:col-start-2">
-                        <p className="text-display text-2xl font-medium leading-[1.2] tracking-tight text-foreground md:text-4xl">
+                      <div className="md:col-span-7 md:col-start-6">
+                        <p className="text-display text-2xl font-medium leading-[1.2] tracking-tight text-foreground md:text-3xl">
                           {b.body}
                         </p>
                       </div>
