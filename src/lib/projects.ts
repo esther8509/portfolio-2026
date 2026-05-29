@@ -33,6 +33,7 @@ import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
 import nuxFoundation04 from "@/assets/nux-foundation-04.png";
+import nuxFoundation05 from "@/assets/nux-foundation-05.png";
 import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 
@@ -330,6 +331,12 @@ export const projects: Project[] = [
           { src: nuxFoundation04, alt: "NUX walkthrough — Generative AI tools" },
         ],
         caption: "The NUX walks creators from a blank scene to a working world, one topic at a time.",
+      },
+      {
+        type: "image",
+        src: nuxFoundation05,
+        alt: "NUX completion screen — Congrats, you've built a world",
+        caption: "The walkthrough ends with a finished world the user can keep building on.",
       },
 
       {
