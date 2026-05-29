@@ -23,7 +23,7 @@ export const Route = createFileRoute("/about")({
 const cv = [
   { year: "2021 — Present", role: "Meta, Reality Labs", place: "Bay Area" },
   { year: "2021", role: "Alaska Airlines", place: "Seattle" },
-  { year: "2020 — 2021", role: "Keurig Dr Pepper", place: "" },
+  { year: "2020 — 2021", role: "Keurig Dr Pepper", place: "Boston" },
   { year: "", role: "School of the Art Institute of Chicago, BFA", place: "" },
 ];
 
