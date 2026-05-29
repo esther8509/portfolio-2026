@@ -507,7 +507,7 @@ export const projects: Project[] = [
     timeline: "2025 to 2026",
     team: "Product Designer, System Apps",
     image: work7,
-    aspect: "square",
+    aspect: "wide",
     caseStudyBlocks: [
       {
         type: "intro",
