@@ -47,19 +47,7 @@ function AboutPage() {
             </h1>
             <div className="mt-10 space-y-5 text-base leading-relaxed text-muted-foreground md:text-lg md:max-w-xl">
               <p>
-                I currently own Clock, Files, and Calendar on Meta Quest, the default apps that
-                define how the OS feels to use. Before that I designed the Meta Quest Developer
-                Center, the developer Feedback Hub, and Quest for Business, Meta's enterprise fleet
-                management product. The work tends to be zero to one, at the level of infrastructure
-                rather than interface.
-              </p>
-              <p>
-                Over the past year I have built an AI-native practice: I write specs detailed enough
-                to ship from, straight to production code on the headset, without a traditional
-                engineering handoff. My manager recognized me as the first AI-native designer on our
-                team. I came to product design through hardware, working at Alaska Airlines and
-                Keurig before Meta. That background shaped how I think about system-level work: the
-                best infrastructure is invisible until it fails.
+                I like designing foundational things: tools, systems, operating system experiences, and products that are still figuring out what they want to be. Recently that's evolved into building AI-native workflows where design and implementation happen almost at the same time. My background is in hardware, which taught me that the best systems usually disappear into the background.
               </p>
             </div>
           </div>
