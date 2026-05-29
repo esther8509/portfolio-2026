@@ -413,9 +413,10 @@ export const projects: Project[] = [
   {
     slug: "quest-for-business",
     title: "Quest for Business",
-    client: "Horizon Managed Services",
+    client: "Meta",
     year: "2024",
     discipline: "Enterprise VR",
+    team: "Horizon Managed Services",
     image: work4,
     aspect: "tall",
     caseStudyBlocks: [
