@@ -413,7 +413,7 @@ export const projects: Project[] = [
       {
         type: "section",
         heading: "The core design problem",
-        body: "The hardest problem wasn't the feature list. It was presets. Different organizations need fundamentally different configurations out of the box. A small business deploying five headsets for training has completely different needs than a large enterprise rolling out hundreds of devices across multiple locations. Getting presets wrong meant IT admins would either be overwhelmed by complexity or unable to configure what they actually needed. I led user research across different enterprise types and sizes to map exactly what each segment needed, the specific rules, permissions, and workflows that mattered at small, medium, and large scale. That research directly shaped the preset system, giving admins a starting point that matched their context without requiring them to build from scratch.",
+        body: "The hardest problem was presets. A small business deploying five headsets has completely different needs than an enterprise rolling out hundreds across multiple locations. I led user research across enterprise types and sizes to map what each segment actually needed, and that research directly shaped a preset system that gave admins a relevant starting point without building from scratch.",
       },
       {
         type: "placeholder",
