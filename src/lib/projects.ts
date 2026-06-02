@@ -471,12 +471,6 @@ export const projects: Project[] = [
         heading: "Outcome",
         body: "During the development period, the product helped land significant enterprise deals including Walmart and Staples, a direct signal that the tool was credible and compelling enough for large-scale deployment.",
       },
-      {
-        type: "placeholder",
-        label: "Outcome metric",
-        caption: "Specific deal details and metrics — to be added when available",
-        aspect: "wide",
-      },
     ],
   },
   {
