@@ -531,6 +531,12 @@ export const projects: Project[] = [
         caption: "Shipping code straight to VR — playing with the working prototype live in the headset.",
       },
       {
+        type: "image",
+        src: specMetaAiVoice.url,
+        alt: "Spec section titled Meta AI Voice Integration listing supported utterances like Hey Meta set an alarm for 10am, and an intent routing table mapping user phrases to Alarm, Timer, or Calendar event",
+        caption: "A spec I wrote solo with Claude for Meta AI voice integration, then built into a working prototype in Cursor.",
+      },
+      {
         type: "section",
         heading: "The guardrail",
         body: "Speed came with a cost. Designs and code generated this way tended to drift from the design system: small inconsistencies in spacing, color, and components that add up across a product. Catching them by hand did not scale. So I worked with engineering to build a linter that checks design and code against the system automatically and flags where they diverge. Clock was its first test case. Moving fast had created a new problem, and the right response was to design the guardrail, not to slow down.",
