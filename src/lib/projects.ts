@@ -435,6 +435,7 @@ export const projects: Project[] = [
       {
         type: "image-grid",
         columns: 2,
+        equalHeight: true,
         images: [
           {
             src: presetsCreate,
