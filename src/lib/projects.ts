@@ -39,6 +39,7 @@ import questAbout from "@/assets/quest-about.png.asset.json";
 import questDetails from "@/assets/quest-details.png.asset.json";
 import questSettings from "@/assets/quest-settings.png.asset.json";
 import questPresets from "@/assets/quest-presets.png.asset.json";
+import specTasks from "@/assets/spec-tasks.png.asset.json";
 import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
@@ -517,10 +518,10 @@ export const projects: Project[] = [
         link: { text: "See the Clock app in VR System Apps for the product story.", to: "/work/meta-wearables" },
       },
       {
-        type: "placeholder",
-        label: "Spec and shipped app",
-        caption: "Spec on the left, shipped app on the right. The distance between them was a single designer.",
-        aspect: "wide",
+        type: "image",
+        src: specTasks.url,
+        alt: "Spec task list provided to VS Code showing tasks like replacing SegControls with RLDS, panel padding updates, and alarm and timer spec work, each with a status",
+        caption: "The spec I handed to VS Code: working end to end from spec to production, one task at a time.",
       },
       {
         type: "section",
