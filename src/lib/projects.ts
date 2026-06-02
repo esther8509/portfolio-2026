@@ -116,18 +116,18 @@ export const projects: Project[] = [
       },
       {
         type: "image",
-        src: clockExploreAlerts,
-        alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
-        caption:
-          "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
-        aspect: "wide",
-      },
-      {
-        type: "image",
         src: clockExploreFaceShape,
         alt: "Two analog clock face explorations side-by-side: a perfect circle on the left and a rounded square on the right",
         caption:
           "Face shape exploration: circle versus rounded square, tested for how each reads at glance distance inside the VR canvas.",
+        aspect: "wide",
+      },
+      {
+        type: "image",
+        src: clockExploreAlerts,
+        alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
+        caption:
+          "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
         aspect: "wide",
       },
       {
