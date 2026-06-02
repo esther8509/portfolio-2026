@@ -9,6 +9,7 @@ import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
+import clockActiveTaskBar from "@/assets/clock-active-task-bar.png.asset.json";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 import oculusDeveloper from "@/assets/oculus-developer.png";
 import mhcpDiscord from "@/assets/mhcp-discord.png";
