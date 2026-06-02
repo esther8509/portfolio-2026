@@ -9,6 +9,7 @@ import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
 import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
+import clockActiveTaskBar from "@/assets/clock-active-task-bar.png.asset.json";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
 import oculusDeveloper from "@/assets/oculus-developer.png";
 import mhcpDiscord from "@/assets/mhcp-discord.png";
@@ -57,7 +58,9 @@ export type CaseStudyBlock =
       natural?: boolean;
     }
   | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
+  | { type: "image-text"; src: string; alt: string; body: string; imageSide?: "left" | "right" }
   | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
+
 
 export type Project = {
   slug: string;
@@ -129,6 +132,13 @@ export const projects: Project[] = [
         caption:
           "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
         aspect: "wide",
+      },
+      {
+        type: "image-text",
+        src: clockActiveTaskBar.url,
+        alt: "Clock minimized into the system's Active Task Bar with persistent Timer and Alarm controls",
+        body: "When Clock minimizes, it collapses into the system's Active Task Bar. Timer and Alarm persist as lightweight controls, while the clock face stays out entirely as passive display.",
+        imageSide: "left",
       },
       {
         type: "callout",
