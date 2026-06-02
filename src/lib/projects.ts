@@ -59,6 +59,7 @@ export type CaseStudyBlock =
     }
   | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
   | { type: "image-text"; src: string; alt: string; body: string; imageSide?: "left" | "right" }
+  | { type: "image-pair"; images: { src: string; alt: string; caption: string }[] }
   | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
 
 
