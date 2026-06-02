@@ -525,6 +525,12 @@ export const projects: Project[] = [
         caption: "The spec I handed to VS Code: working end to end from spec to production, one task at a time.",
       },
       {
+        type: "image",
+        src: clockVrHeadset.url,
+        alt: "Photo of the Clock app's New Alarm dialog running live on a VR headset, with invalid hour and minute inputs showing red validation errors",
+        caption: "Shipping code straight to VR — playing with the prototype live in the headset to find the rough edges.",
+      },
+      {
         type: "section",
         heading: "The guardrail",
         body: "Speed came with a cost. Designs and code generated this way tended to drift from the design system: small inconsistencies in spacing, color, and components that add up across a product. Catching them by hand did not scale. So I worked with engineering to build a linter that checks design and code against the system automatically and flags where they diverge. Clock was its first test case. Moving fast had created a new problem, and the right response was to design the guardrail, not to slow down.",
