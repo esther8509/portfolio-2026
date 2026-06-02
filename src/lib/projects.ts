@@ -208,7 +208,7 @@ export const projects: Project[] = [
   {
     slug: "developer-tools",
     title: "Developer Platforms",
-    client: "Meta",
+    client: "Meta Reality Labs",
     year: "2026",
     discipline: "Developer Platforms",
     image: work2,
@@ -318,7 +318,7 @@ export const projects: Project[] = [
   {
     slug: "world-desktop-editor",
     title: "World Desktop Editor",
-    client: "Meta",
+    client: "Meta Reality Labs",
     year: "2025",
     discipline: "Spatial Tooling",
     image: work3,
@@ -401,7 +401,7 @@ export const projects: Project[] = [
   {
     slug: "quest-for-business",
     title: "Quest for Business",
-    client: "Meta",
+    client: "Meta Reality Labs",
     year: "2024",
     discipline: "Horizon Managed Services",
     team: "Horizon Managed Services",
