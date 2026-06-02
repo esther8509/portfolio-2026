@@ -7,7 +7,7 @@ import work5 from "@/assets/alaska-airlines.png";
 import work7 from "@/assets/ai-native-thumbnail.png";
 import clockMidfi from "@/assets/clock-midfi.png";
 import clockHifi from "@/assets/clock-hifi.png";
-import clockExploreAlerts from "@/assets/clock-explore-alerts.png";
+import clockExploreAlerts from "@/assets/clock-explore-alerts.png.asset.json";
 import clockExploreFaceShape from "@/assets/clock-explore-face-shape.png";
 import clockActiveTaskBar from "@/assets/clock-active-task-bar.png.asset.json";
 import aiNativeWorkflow from "@/assets/ai-native-workflow.png";
@@ -126,12 +126,11 @@ export const projects: Project[] = [
         aspect: "wide",
       },
       {
-        type: "image",
-        src: clockExploreAlerts,
+        type: "image-text",
+        src: clockExploreAlerts.url,
         alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
-        caption:
-          "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
-        aspect: "wide",
+        body: "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
+        imageSide: "left",
       },
       {
         type: "image-text",
