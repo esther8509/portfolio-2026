@@ -77,7 +77,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "meta-wearables",
-    title: "VR System Apps",
+    title: "XR System Apps",
     client: "Meta Reality Labs",
     year: "2026",
     discipline: "Wearables",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     caseStudyBlocks: [
       {
         type: "intro",
-        body: "Every operating system needs a foundation: the default apps that ship built in and quietly shape how a device feels to use. On phones that foundation is mature and invisible. In VR it barely exists yet. I'm the sole designer for three of those foundational apps on Meta Quest, Clock, Files, and Calendar, each one defining how a system app should behave when your inputs are your eyes, your hands, a controller, and a keyboard, sometimes all at once.",
+        body: "Every operating system needs a foundation: the default apps that ship built in and quietly shape how a device feels to use. On phones that foundation is mature and invisible. In XR it barely exists yet. I'm the sole designer for three of those foundational apps on Meta Quest, Clock, Files, and Calendar, each one defining how a system app should behave when your inputs are your eyes, your hands, a controller, and a keyboard, sometimes all at once.",
       },
 
       {
@@ -414,7 +414,10 @@ export const projects: Project[] = [
         type: "image-grid",
         columns: 2,
         images: [
-          { src: presetsCreate, alt: "Device presets list with Create device preset menu showing Individual and Shared modes" },
+          {
+            src: presetsCreate,
+            alt: "Device presets list with Create device preset menu showing Individual and Shared modes",
+          },
           { src: presetsExperience, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
         ],
         caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
@@ -475,9 +478,9 @@ export const projects: Project[] = [
     subtitle: "A new way of working, from idea to shipped",
     client: "Meta Reality Labs",
     year: "2026",
-    discipline: "VR System Apps",
+    discipline: "XR System Apps",
     timeline: "2025 to 2026",
-    team: "VR System Apps",
+    team: "XR System Apps",
     image: work7,
     aspect: "wide",
     caseStudyBlocks: [
