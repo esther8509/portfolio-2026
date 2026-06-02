@@ -132,7 +132,7 @@ export const projects: Project[] = [
       },
       {
         type: "callout",
-        body: "What started as a search query for a missing app is now a showcase product for Meta's next-generation design language, taken from idea to headset by a single designer.",
+        body: "What started as a search query for a missing app is now a showcase product for Meta's next-generation design language, taken from idea to headset by a single designer.See "AI Native" project for more info on E2E process.",
       },
 
       {
