@@ -440,7 +440,7 @@ export const projects: Project[] = [
             src: presetsCreate,
             alt: "Device presets list with Create device preset menu showing Individual and Shared modes",
           },
-          { src: presetsExperience, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
+          { src: presetsExperience.url, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
         ],
         caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
       },
