@@ -35,6 +35,10 @@ import videoLibrary from "@/assets/video-library.png";
 import conflictResolutionFlow from "@/assets/conflict-resolution-flow.png";
 import presetsCreate from "@/assets/presets-create.png";
 import presetsExperience from "@/assets/presets-experience.png";
+import questAbout from "@/assets/quest-about.png.asset.json";
+import questDetails from "@/assets/quest-details.png.asset.json";
+import questSettings from "@/assets/quest-settings.png.asset.json";
+import questPresets from "@/assets/quest-presets.png.asset.json";
 import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
@@ -57,7 +61,7 @@ export type CaseStudyBlock =
       aspect?: "wide" | "tall" | "square";
       natural?: boolean;
     }
-  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
+  | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4; equalHeight?: boolean }
   | { type: "image-text"; src: string; alt: string; body: string; imageSide?: "left" | "right" }
   | { type: "image-pair"; images: { src: string; alt: string; caption: string }[] }
   | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
@@ -439,6 +443,17 @@ export const projects: Project[] = [
           { src: presetsExperience, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
         ],
         caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
+      },
+      {
+        type: "image-grid",
+        columns: 4,
+        equalHeight: true,
+        images: [
+          { src: questAbout.url, alt: "Device About tab showing device information, controllers, and battery" },
+          { src: questDetails.url, alt: "Device Details tab showing owner, group, management mode, and permissions" },
+          { src: questSettings.url, alt: "Device Settings tab showing Networks, Certificates, and Security settings" },
+          { src: questPresets.url, alt: "Device Presets tab listing assigned presets and assignment sources" },
+        ],
       },
 
       {

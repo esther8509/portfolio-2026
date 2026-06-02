@@ -224,9 +224,15 @@ function ProjectDetailPage() {
                   return (
                     <figure key={i} className="space-y-4">
                       <div className={`grid grid-cols-1 gap-4 ${colClass}`}>
-                        {b.images.map((img, j) => (
-                          <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
-                        ))}
+                        {b.images.map((img, j) =>
+                          b.equalHeight ? (
+                            <div key={j} className="flex h-[420px] items-center justify-center overflow-hidden rounded-md bg-muted/20">
+                              <img src={img.src} alt={img.alt} className="max-h-full max-w-full object-contain" loading="lazy" />
+                            </div>
+                          ) : (
+                            <img key={j} src={img.src} alt={img.alt} className="h-auto w-full rounded-md" loading="lazy" />
+                          )
+                        )}
                       </div>
                       {b.caption && <figcaption className="text-sm text-muted-foreground">{b.caption}</figcaption>}
                     </figure>
