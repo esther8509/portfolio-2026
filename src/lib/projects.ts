@@ -127,18 +127,21 @@ export const projects: Project[] = [
         aspect: "wide",
       },
       {
-        type: "image-text",
-        src: clockExploreAlerts.url,
-        alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
-        body: "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
-        imageSide: "left",
-      },
-      {
-        type: "image-text",
-        src: clockActiveTaskBar.url,
-        alt: "Clock minimized into the system's Active Task Bar with persistent Timer and Alarm controls",
-        body: "When Clock minimizes, it collapses into the system's Active Task Bar. Timer and Alarm persist as lightweight controls, while the clock face stays out entirely as passive display.",
-        imageSide: "left",
+        type: "image-pair",
+        images: [
+          {
+            src: clockExploreAlerts.url,
+            alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
+            caption:
+              "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
+          },
+          {
+            src: clockActiveTaskBar.url,
+            alt: "Clock minimized into the system's Active Task Bar with persistent Timer and Alarm controls",
+            caption:
+              "When Clock minimizes, it collapses into the system's Active Task Bar. Timer and Alarm persist as lightweight controls, while the clock face stays out entirely as passive display.",
+          },
+        ],
       },
       {
         type: "callout",
