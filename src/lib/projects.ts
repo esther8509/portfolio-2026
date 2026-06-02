@@ -429,12 +429,6 @@ export const projects: Project[] = [
         body: "Core surfaces across the Device Manager admin experience, from bulk provisioning through day-to-day fleet operations.",
       },
       {
-        type: "placeholder",
-        label: "Device Manager screenshots",
-        caption: "Bulk provisioning, device presets, status dashboard, remote wipe, find my device",
-        aspect: "wide",
-      },
-      {
         type: "image-grid",
         columns: 2,
         images: [
