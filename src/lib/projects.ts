@@ -525,10 +525,9 @@ export const projects: Project[] = [
         caption: "The spec I handed to VS Code: working end to end from spec to production, one task at a time.",
       },
       {
-        type: "image",
-        src: clockVrHeadset.url,
-        alt: "Photo of the Clock app's New Alarm dialog running live on a VR headset, with invalid hour and minute inputs showing red validation errors",
-        caption: "Shipping code straight to VR — playing with the prototype live in the headset to find the rough edges.",
+        type: "video",
+        src: clockVrPrototype.url,
+        caption: "Shipping code straight to VR — playing with the working prototype live in the headset.",
       },
       {
         type: "section",
