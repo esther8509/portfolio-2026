@@ -40,6 +40,7 @@ import questDetails from "@/assets/quest-details.png.asset.json";
 import questSettings from "@/assets/quest-settings.png.asset.json";
 import questPresets from "@/assets/quest-presets.png.asset.json";
 import specTasks from "@/assets/spec-tasks.png.asset.json";
+import clockVrHeadset from "@/assets/clock-vr-headset.jpeg.asset.json";
 import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
@@ -522,6 +523,12 @@ export const projects: Project[] = [
         src: specTasks.url,
         alt: "Spec task list provided to VS Code showing tasks like replacing SegControls with RLDS, panel padding updates, and alarm and timer spec work, each with a status",
         caption: "The spec I handed to VS Code: working end to end from spec to production, one task at a time.",
+      },
+      {
+        type: "image",
+        src: clockVrHeadset.url,
+        alt: "Photo of the Clock app's New Alarm dialog running live on a VR headset, with invalid hour and minute inputs showing red validation errors",
+        caption: "Shipping code straight to VR — playing with the prototype live in the headset to find the rough edges.",
       },
       {
         type: "section",
