@@ -418,6 +418,23 @@ export const projects: Project[] = [
         body: "The hardest problem was presets. A small business deploying five headsets has completely different needs than an enterprise rolling out hundreds across multiple locations. I led user research across enterprise types and sizes to map what each segment actually needed, and that research directly shaped a preset system that gave admins a relevant starting point without building from scratch.",
       },
       {
+        type: "part",
+
+        title: "Features",
+        subtitle: "Core surfaces across the admin experience",
+      },
+      {
+        type: "section",
+        heading: "Features",
+        body: "Core surfaces across the Device Manager admin experience, from bulk provisioning through day-to-day fleet operations.",
+      },
+      {
+        type: "placeholder",
+        label: "Device Manager screenshots",
+        caption: "Bulk provisioning, device presets, status dashboard, remote wipe, find my device",
+        aspect: "wide",
+      },
+      {
         type: "image-grid",
         columns: 2,
         images: [
@@ -446,24 +463,6 @@ export const projects: Project[] = [
         src: conflictResolutionFlow,
         alt: "Conflict resolution flow map across device management actions",
         caption: "Mapping contextual warnings and blocking modals across dozens of action/state permutations.",
-      },
-
-      {
-        type: "part",
-
-        title: "Features",
-        subtitle: "Core surfaces across the admin experience",
-      },
-      {
-        type: "section",
-        heading: "Features",
-        body: "Core surfaces across the Device Manager admin experience, from bulk provisioning through day-to-day fleet operations.",
-      },
-      {
-        type: "placeholder",
-        label: "Device Manager screenshots",
-        caption: "Bulk provisioning, device presets, status dashboard, remote wipe, find my device",
-        aspect: "wide",
       },
 
       {
