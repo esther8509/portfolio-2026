@@ -41,6 +41,7 @@ import questSettings from "@/assets/quest-settings.png.asset.json";
 import questPresets from "@/assets/quest-presets.png.asset.json";
 import specTasks from "@/assets/spec-tasks.png.asset.json";
 import clockVrPrototype from "@/assets/clock-vr-prototype.mp4.asset.json";
+import specMetaAiVoice from "@/assets/spec-meta-ai-voice.png.asset.json";
 import nuxFoundation01 from "@/assets/nux-foundation-01.png";
 import nuxFoundation02 from "@/assets/nux-foundation-02.png";
 import nuxFoundation03 from "@/assets/nux-foundation-03.png";
