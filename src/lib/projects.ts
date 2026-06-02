@@ -444,6 +444,17 @@ export const projects: Project[] = [
         ],
         caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
       },
+      {
+        type: "image-grid",
+        columns: 4,
+        equalHeight: true,
+        images: [
+          { src: questAbout.url, alt: "Device About tab showing device information, controllers, and battery" },
+          { src: questDetails.url, alt: "Device Details tab showing owner, group, management mode, and permissions" },
+          { src: questSettings.url, alt: "Device Settings tab showing Networks, Certificates, and Security settings" },
+          { src: questPresets.url, alt: "Device Presets tab listing assigned presets and assignment sources" },
+        ],
+      },
 
       {
         type: "part",
