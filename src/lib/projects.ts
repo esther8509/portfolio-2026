@@ -34,7 +34,7 @@ import horizonCreator from "@/assets/horizon-creator.png";
 import videoLibrary from "@/assets/video-library.png";
 import conflictResolutionFlow from "@/assets/conflict-resolution-flow.png";
 import presetsCreate from "@/assets/presets-create.png";
-import presetsExperience from "@/assets/presets-experience.png";
+import presetsExperience from "@/assets/presets-experience-v2.png.asset.json";
 import questAbout from "@/assets/quest-about.png.asset.json";
 import questDetails from "@/assets/quest-details.png.asset.json";
 import questSettings from "@/assets/quest-settings.png.asset.json";
@@ -435,12 +435,13 @@ export const projects: Project[] = [
       {
         type: "image-grid",
         columns: 2,
+        equalHeight: true,
         images: [
           {
             src: presetsCreate,
             alt: "Device presets list with Create device preset menu showing Individual and Shared modes",
           },
-          { src: presetsExperience, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
+          { src: presetsExperience.url, alt: "Device preset detail view configuring session intro steps for Shared Mode" },
         ],
         caption: "Preset configurations spanning SMB, mid-market, and enterprise deployments.",
       },
