@@ -134,6 +134,13 @@ export const projects: Project[] = [
         aspect: "wide",
       },
       {
+        type: "image-text",
+        src: clockActiveTaskBar.url,
+        alt: "Clock minimized into the system's Active Task Bar with persistent Timer and Alarm controls",
+        body: "When Clock minimizes, it collapses into the system's Active Task Bar. Timer and Alarm persist as lightweight controls, while the clock face stays out entirely as passive display.",
+        imageSide: "left",
+      },
+      {
         type: "callout",
         body: 'What started as a search query for a missing app is now a showcase product for Meta\'s next-generation design language, taken from idea to headset by a single designer. See "AI Native" project for more info on E2E process.',
       },
