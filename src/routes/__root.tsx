@@ -72,6 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "robots", content: "noindex, nofollow" },
       { title: "Esther Nam — Portfolio" },
       { name: "description", content: "Selected works, writing, and experiments by Esther Nam." },
       { name: "author", content: "Esther Nam" },
