@@ -25,6 +25,8 @@ const cv = [
   { year: "2021 — Present", role: "Meta, Reality Labs", place: "Bay Area" },
   { year: "2021", role: "Alaska Airlines", place: "Seattle" },
   { year: "2020 — 2021", role: "Keurig Dr Pepper", place: "Boston" },
+  { year: "2018 — 2020", role: "Payroc, Lead UX Designer", place: "Boston" },
+  { year: "2016 — 2017", role: "Lightology, Production Designer", place: "Chicago" },
   { year: "", role: "School of the Art Institute of Chicago, BFA", place: "" },
 ];
 
@@ -70,9 +72,7 @@ function AboutPage() {
       {/* CV */}
       <section className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid grid-cols-1 gap-10 border-t border-border/60 pt-12 md:grid-cols-12">
-          <div className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            Curriculum
-          </div>
+          <div className="md:col-span-3" />
           <div className="md:col-span-9">
             <ul className="divide-y divide-border/60">
               {cv.map((c) => (
