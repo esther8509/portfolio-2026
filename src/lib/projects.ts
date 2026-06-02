@@ -82,7 +82,7 @@ export const projects: Project[] = [
     year: "2026",
     discipline: "Wearables",
     timeline: "H1 2026",
-    team: "VR OS",
+    team: "XR System Apps",
     image: work1,
     aspect: "square",
     caseStudyBlocks: [
