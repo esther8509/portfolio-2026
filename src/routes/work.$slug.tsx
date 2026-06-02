@@ -236,10 +236,10 @@ function ProjectDetailPage() {
                   const imgFirst = (b.imageSide ?? "left") === "left";
                   return (
                     <div key={i} className="grid grid-cols-1 items-center gap-8 md:grid-cols-12 md:gap-12">
-                      <div className={imgFirst ? "md:col-span-6" : "md:col-span-6 md:col-start-7 md:row-start-1"}>
+                      <div className={imgFirst ? "md:col-span-5" : "md:col-span-5 md:col-start-8 md:row-start-1"}>
                         <img src={b.src} alt={b.alt} className="h-auto max-w-full rounded-md" loading="lazy" />
                       </div>
-                      <div className={imgFirst ? "md:col-span-5 md:col-start-8" : "md:col-span-5 md:col-start-1 md:row-start-1"}>
+                      <div className={imgFirst ? "md:col-span-7 md:col-start-6" : "md:col-span-7 md:col-start-1 md:row-start-1"}>
                         <p className="text-lg leading-relaxed text-foreground/80 md:text-xl">{b.body}</p>
                       </div>
                     </div>
