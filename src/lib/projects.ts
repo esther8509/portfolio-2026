@@ -58,7 +58,9 @@ export type CaseStudyBlock =
       natural?: boolean;
     }
   | { type: "image-grid"; images: { src: string; alt: string }[]; caption?: string; columns?: 2 | 3 | 4 }
+  | { type: "image-text"; src: string; alt: string; body: string; imageSide?: "left" | "right" }
   | { type: "video"; src: string; caption?: string; aspect?: "wide" | "tall" | "square"; poster?: string };
+
 
 export type Project = {
   slug: string;
