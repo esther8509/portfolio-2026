@@ -386,12 +386,6 @@ export const projects: Project[] = [
         body: "The NUX shipped to 100% of users, a significant milestone for a zero to one feature. By ending with a real world created by the user, the tutorial set a new bar for how the editor onboards creators.",
       },
       {
-        type: "placeholder",
-        label: "Finished world",
-        caption: "The end of the walkthrough is not a checklist. It is a world the user has actually built.",
-        aspect: "wide",
-      },
-      {
         type: "callout",
         body: "The goal was not to teach the editor. It was to make sure that by the end, you had already built something in it.",
       },
