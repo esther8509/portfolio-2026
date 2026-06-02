@@ -126,12 +126,11 @@ export const projects: Project[] = [
         aspect: "wide",
       },
       {
-        type: "image",
-        src: clockExploreAlerts,
+        type: "image-text",
+        src: clockExploreAlerts.url,
         alt: "Alert pattern exploration: Option 1 full dialog with Snooze and Dismiss, Option 2 compact toast notification for both alarm and timer",
-        caption:
-          "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
-        aspect: "wide",
+        body: "Alert pattern study: weighing a focused modal against a less interruptive toast for alarm and timer notifications.",
+        imageSide: "left",
       },
       {
         type: "image-text",
