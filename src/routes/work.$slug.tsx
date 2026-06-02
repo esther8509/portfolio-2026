@@ -245,6 +245,20 @@ function ProjectDetailPage() {
                     </div>
                   );
                 }
+                if (b.type === "image-pair") {
+                  return (
+                    <div key={i} className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                      {b.images.map((img, j) => (
+                        <figure key={j} className="flex flex-col gap-4">
+                          <div className="flex h-[420px] items-center justify-center overflow-hidden rounded-md bg-muted/20">
+                            <img src={img.src} alt={img.alt} className="max-h-full max-w-full object-contain" loading="lazy" />
+                          </div>
+                          <figcaption className="text-sm text-muted-foreground">{img.caption}</figcaption>
+                        </figure>
+                      ))}
+                    </div>
+                  );
+                }
                 if (b.type === "video") {
                   return (
                     <figure key={i} className="space-y-4">
